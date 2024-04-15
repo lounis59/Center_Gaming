@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { JEUX } from '../Liste_Jeux';
 
 @Component({
   selector: 'app-page-acceuil',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './page-acceuil.component.css'
 })
 export class PageAcceuilComponent {
-
+  liste_jeux = JEUX
 }
