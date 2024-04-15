@@ -1,0 +1,35 @@
+.jeux 
+
+{
+    .jeux {
+        position: relative;
+        overflow: hidden; 
+      }
+}
+
+.phot
+{
+    position: absolute;
+    width:25rem;
+    aspect-ratio: 16/9;
+    top: 0;
+    left: 0;
+}
+
+.vid
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    aspect-ratio: 16/9;
+    z-index: -1;
+}
+
+.carteJeux 
+
+{
+    position: absolute;
+    align-items: center;
+    
+}
