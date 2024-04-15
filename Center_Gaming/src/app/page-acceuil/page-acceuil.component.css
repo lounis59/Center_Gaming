@@ -1,15 +1,14 @@
-.jeux 
 
-{
     .jeux {
         position: relative;
         overflow: hidden; 
+
       }
-}
+
 
 .phot
 {
-    position: absolute;
+    
     width:25rem;
     aspect-ratio: 16/9;
     top: 0;
@@ -29,7 +28,14 @@
 .carteJeux 
 
 {
-    position: absolute;
-    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 1;
     
+
+
 }

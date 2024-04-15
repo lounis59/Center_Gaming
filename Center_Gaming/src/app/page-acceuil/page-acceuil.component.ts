@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { JEUX } from '../Liste_Jeux';
 
 @Component({
   selector: 'app-page-acceuil',
@@ -8,7 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './page-acceuil.component.css'
 })
 export default class PageAcceuilComponent {
-  listeJeux = JEU
+  
+  liste_jeux = JEUX.splice(0, 6)
   mouseenter(){
   
     const video = document.querySelector(".vid") as HTMLVideoElement;
@@ -32,31 +34,31 @@ export default class PageAcceuilComponent {
   
 
 
-     photoJeux() {
+//      photoJeux() {
       
-   const jeuxdumoment = document.querySelector(".carteJeux"); 
+//    const jeuxdumoment = document.querySelector(".carteJeux"); 
 
- for (let i = 0; i < 9; i++) {
-   const div = document.createElement('div');
-   div.classList.add('ListeJeux');
+//  for (let i = 0; i < 9; i++) {
+//    const div = document.createElement('div');
+//    div.classList.add('ListeJeux');
 
-   const img = document.createElement('img');
-   img.classList.add('photo1');
-   img.src = '/assets/horizon.jpg';
+//    const img = document.createElement('img');
+//    img.classList.add('photo1');
+//    img.src = '/assets/horizon.jpg';
   
 
-   const video = document.createElement('video');
-   video.classList.add('video1');
-   video.src = '/assets/horizon1.webm';
-   video.loop = true;
-   video.muted = true;
+//    const video = document.createElement('video');
+//    video.classList.add('video1');
+//    video.src = '/assets/horizon1.webm';
+//    video.loop = true;
+//    video.muted = true;
 
-   div.appendChild(img);
-   div.appendChild(video);
+//    div.appendChild(img);
+//    div.appendChild(video);
 
-   jeuxdumoment?.appendChild(div);
- }
- }
+//    jeuxdumoment?.appendChild(div);
+//  }
+//  }
 }
 
 
