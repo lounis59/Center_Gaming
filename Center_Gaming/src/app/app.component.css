@@ -1,0 +1,55 @@
+@font-face{
+    font-family: 'FjallaOne';
+    src: url(../assets/Font-Familly/FjallaOne-Regular.ttf);
+}
+header{
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    img{
+        top: 0;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+    }
+}
+nav{
+    z-index: 2;
+    font-family: 'FjallaOne';
+    position: sticky;
+    left: 50%;
+    translate: -50%;
+    width: 50vw;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    ul{
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        list-style: none;
+    }
+    span{
+        position: absolute;
+        right: 0;
+        display: flex;
+        background-color: orangered;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        svg{
+        width: 50%;
+        fill: white;
+    }
+    svg:hover{
+        transform: scale(1.2);
+    }
+    }
+}
