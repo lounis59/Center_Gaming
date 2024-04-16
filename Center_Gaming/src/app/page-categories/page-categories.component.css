@@ -1,0 +1,69 @@
+*, ::before, ::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body
+{
+    background-color: rgb(17, 17, 17);
+} */
+ul
+{
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 3rem;
+}
+li
+{
+    display: grid;
+    grid-template-rows: 200px auto;
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 1.5rem 1rem;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 2rem;
+}
+.action{background-image: url(../../assets/categoriesjeux/action.jpg);}
+.arcade{background-image: url(../../assets/categoriesjeux/arcade.webp);}
+.aventure{background-image: url(../../assets/categoriesjeux/aventure.jpg);}
+.fps{background-image: url(../../assets/categoriesjeux/fps.jpg);}
+.solo{background-image: url(../../assets/categoriesjeux/solo.jpg);}
+.rpg{background-image: url(../../assets/categoriesjeux/RPG.jpg);}
+.free{background-image: url(../../assets/categoriesjeux/free.jpg);color: transparent;}
+.sport{background-image: url(../../assets/categoriesjeux/sport.jpg);}
+.strategy{background-image: url(../../assets/categoriesjeux/STRATEGY.jpg);}
+
+li:hover
+{
+    border: 2px solid orange;
+    width: 106%;
+    height: 106%;
+    box-shadow: 0px 0px 50px 15px #656565;
+    color: orange;
+}
+span
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h2
+{
+    color: white;
+    font-family: monospace;
+    font-size: 2rem;
+    margin: 20px 10px;
+}
+button
+{
+    position: relative;
+    right: -5%;
+}
