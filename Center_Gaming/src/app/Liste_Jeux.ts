@@ -102,6 +102,26 @@ export const JEUX: Jeux[] =[
             "video":"",
             "prix":"37.16€",
             "genre":["jeux solo","RPG"]},
+            {"id":12,
+            "titre":"Fallout 4 GOTY Edition",
+            "platform":["pc","xbox"],
+            "description":"Bethesda Game Studios, studio de développement maintes fois récompensé à l'origine de Fallout 3 et de The Elder Scrolls V: Skyrim, vous invite à découvrir Fallout 4, leur titre le plus ambitieux à ce jour incarnant la nouvelle génération du jeu en monde ouvert.\n\nDans la peau du seul survivant de l'abri 111, vous émergez dans un monde dévasté par une guerre nucléaire. Votre survie sera un combat de tous les instants et vos choix façonneront votre destin. Vous seul avez le pouvoir de faire entrer les Terres désolées dans une nouvelle ère. Bienvenue chez vous.\n\nJouissez d'une liberté d'action sans précédent dans un monde ouvert offrant des centaines de lieux, de personnages et de quêtes. Rejoignez plusieurs factions dans leur combat pour la suprématie ou forgez votre destinée en loup solitaire, c'est à vous seul de décider.\n\nNIncarnez le personnage que vous voulez grâce au système S.P.E.C.I.A.L. Soldat en armure assistée ou baratineur charismatique, choisissez parmi des centaines d'aptitudes et développez votre propre style de jeu.\n\nUn tout nouveau moteur graphique et une gestion des éclairages de nouvelle génération donnent vie au monde de Fallout comme jamais auparavant. Des forêts dévastées du Commonwealth aux ruines de Boston, chaque lieu fourmille de détails dynamiques. \n\nLes combats intenses à la première ou à la troisième personne peuvent aussi être ralentis grâce au nouveau Système de Visée Assistée Vault-Tec (SVAV) dynamique, qui vous permet de choisir vos attaques avant de profiter du carnage comme si vous y étiez.\n\nTrouvez, améliorez et créez des milliers d'objets grâce au système de fabrication le plus sophistiqué jamais conçu. Armes, armures, substances chimiques et nourriture ne sont qu'une infime partie des possibilités : vous pourrez même construire et gérer des colonies entières !",
+            "sortie":"10 novembre 2015",
+            "image":["./assets/fallout-4-goty-1.jpg","./assets/fallout-4-goty-2.jpg","./assets/fallout-4-goty-3.jpg"],
+            "video":"",
+            "prix":"7.49€",
+            "genre":["jeux solo","RPG"]},
+            {"id":13,
+            "titre":"Horizon Forbidden West Complete Edition",
+            "platform":["pc","ps5"],
+            "description":"Accompagnez Aloy dans son périple au cœur d'un territoire majestueux mais non moins périlleux, qui abrite de mystérieuses nouvelles menaces. Avec la version Complete Edition, profitez du jeu à succès Horizon Forbidden West sur PC ainsi que de contenu bonus, y compris l'extension Burning Shores dont l'histoire commence directement après le jeu principal.\n\nExplorez des terres lointaines, affrontez des machines toujours plus imposantes et dévastatrices, et rencontrez de nouvelles tribus fascinantes lors de votre retour dans le monde d'Horizon dépeignant un futur lointain post-apocalyptique.\n\nLe monde se meurt. De terribles tempêtes et un déclin inéluctable s'abattent sur les vestiges épars de l'humanité, tandis que de nouvelles machines effrayantes rôdent aux frontières et que la vie sur Terre se précipite vers une nouvelle extinction.\n\nC'est à Aloy que revient la mission de découvrir les secrets de ces menaces et de restaurer l'ordre et l'équilibre du monde. Dans sa quête, elle devra retrouver d'anciens amis, forger des alliances avec de nouvelles factions guerrières et exhumer les secrets des temps anciens.\n\nObservez chaque détail du jeu avec les formats d'image Ultrawide 21:9 et Super Ultrawide 32:9, ainsi que la prise en charge du triple écran 48:9.*\n\nRegardez l'Ouest prohibé prendre vie grâce au rendu optimisé et à la génération d'images NVIDIA DLSS 3, à l'amélioration d'images NVIDIA DLAA et à la réduction de latence NVIDIA Reflex. AMD FSR et Intel XeSS sont également compatibles.",
+            "sortie":"21 mars 2024",
+            "image":["./assets/horizon-forbidden-1.jpg","./assets/horizon-forbidden-2.jpg","./assets/horizon-forbidden-3.jpg"],
+            "video":"",
+            "prix":"44.10€",
+            "genre":["jeux solo","action","RPG"]},
+
+
 
         
         
