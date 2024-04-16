@@ -7,7 +7,9 @@ main
         overflow: hidden; 
         /* min-width: 25vw; */
         /* margin: auto; */
-       
+       &:hover{
+        scale: 1.075;
+       }
       }
 
 
@@ -58,14 +60,14 @@ main
 
     .Prix
     {
-        position: relative;
+        position: absolute;
         color: white;
         font-family: 'FjallaOne';
         background-color: orangered;
         width: fit-content;
         padding: 1px;
-        top : -5rem;
-        left: 21rem;
+        top:65%;
+        right: 0;
         z-index : 3;
         border-radius: 10px;
     }
