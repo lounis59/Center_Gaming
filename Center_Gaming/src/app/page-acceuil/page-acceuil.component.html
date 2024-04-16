@@ -1,6 +1,5 @@
 
   <main>
- <h2> Tendance du moment ✓</h2>
     <div class="carteJeux">
     @for (jeu of liste_jeux; track $index) 
     {
@@ -10,8 +9,9 @@
             loop muted></video>
             <div class="Nom">
                 <p>{{jeu.titre}}</p></div>
-                <div class="Prix"></div>
+                <div class="Prix">
                 <p>{{jeu.prix}}</p>
+                </div>
                 </div>
     }
     
