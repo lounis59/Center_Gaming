@@ -3,11 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+footer
+{
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.lien
+{
+  height: 30vh;
+}
 .footer-container
 {
   display: flex;
   align-self: center;
-  background-color: rgb(50, 48, 48);
+  background-color: rgb(44, 54, 46);
   flex-direction: column;
   text-align: center;
   margin-bottom: 0 !important;
@@ -19,10 +27,17 @@ a
   cursor: pointer;
   color: white;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.2rem;
+}
+li
+{
+  margin-bottom: 20px;
 }
 .list
 {
+  position: relative;
+  top: 3vh;
+  left: 5vw;
   list-style:  none;
 }
 a:hover
@@ -48,8 +63,8 @@ a:hover
 }
 .icon
 {
-  height: 7vh;
-  width: 4vw;
+  height: 4vh;
+  width: 2vw;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -59,7 +74,7 @@ a:hover
 }
 .icon img
 {
-  width: 50px;
+  width: 20px;
 }
 .facebook
 {
@@ -103,38 +118,32 @@ opacity:  0.7;
 
 /* Copyright */
 
-.information, .geo-selected
+.information, .geo-selected, .copyright
 {
   display: flex;
 }
 .geo-selected
 {
+  align-items: center;
 position: relative;
-left: 45vw;
+left: 58vw;
 gap: 10px;
 }
 .copyright, .localisation, .country, .currency
 {
   color: white;
-  font-size: 1.6rem;
-}
-.icon-language img
-{
-  height: max-content;
-  width: 2vw;
-  margin: 0;
-  /* background-color: white; */
+  font-size: 1.2rem;
 }
 .icon-language svg
 {
   position: relative;
-  width: 2vw;
+  width: 30px;
   fill: white;
   height: 100%;
 }
 .icon-currencies svg
 {
-  width: 2vw;
+  width: 30px;
   fill:white;
   height: 2vw;
 }
@@ -145,13 +154,44 @@ gap: 10px;
   fill:white;
   height: 3px;
   padding: 10px;
+  bottom: 15px;
 }
-.lien
+.copyright
 {
-  height: 30vh;
+  align-items: center;
 }
-li
+.apps
 {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 10vw;
+  gap: 5vw;
 }
-
+.test
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.apple
+{
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: black;
+  padding: 10px;
+}
+.android
+{
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: black;
+  padding: 10px;
+}
+.apple img
+{
+  width: 5vw;
+}
+.android img
+{
+  width: 5vw;
+}
