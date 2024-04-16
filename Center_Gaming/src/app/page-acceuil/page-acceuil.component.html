@@ -1,22 +1,18 @@
 
-<!-- <main>
-
-    <div id="">
-   <img src=" image[1]" alt="">
-    </div>
-
-</main>
-  -->
-
   <main>
     <div class="carteJeux">
     @for (jeu of liste_jeux; track $index) 
     {
         <div class="jeux">
-            <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
-            <video class="vid" src="{/assets/video1.webm}"
+            <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, video)" (mouseleave)="mouseleave(image, video)" #image>
+            <video class="vid" src="/assets/video1.webm" #video
             loop muted></video>
-        </div>
+            <div class="Nom">
+                <p>{{jeu.titre}}</p></div>
+                <div class="Prix">
+                <p>{{jeu.prix}}</p>
+                </div>
+                </div>
     }
     
 </div>

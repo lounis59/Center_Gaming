@@ -21,5 +21,36 @@ export class AppComponent implements OnInit {
     this.background = imageAleatoire
     console.log(imageAleatoire)
   }
+  sizeSeach($event : Event,element : HTMLElement,logo:HTMLElement){
+    if($event.target instanceof HTMLInputElement)return
+    // const logo = element.querySelector('svg')
+    const input = element.querySelector('input')
+    if(element.style.width === ""){
+    element.style.width = '100%'
+    element.style.borderRadius = '30px'
+    element.style.transition = 'width 0.5s'
+    if(input){
+      input.style.display = 'block'
+      input.style.height = '95%'
+      
+    }
+    if(logo){
+      logo.style.display = 'none'
+
+    }
+  }else{
+    element.style.borderRadius = ''
+    element.style.width = ''
+    element.style.transition = 'border-radius 1s'
+    if(logo){
+      logo.style.display = ""
+    }
+    if(input){
+
+      input.style.display = ''
+    }
+  }
+
+  }
  
 }
