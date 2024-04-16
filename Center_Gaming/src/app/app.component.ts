@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FooterCenterGamingComponent } from './footer-center-gaming/footer-center-gaming.component';
 import { JEUX } from './Liste_Jeux';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,FooterCenterGamingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -34,7 +35,7 @@ export class AppComponent implements OnInit {
     if(input){
       input.style.display = 'block'
       input.style.height = '95%'
-      
+
     }
     if(logo){
       logo.style.display = 'none'
@@ -61,5 +62,5 @@ export class AppComponent implements OnInit {
       element.style.height = ''
     }
   }
- 
+
 }

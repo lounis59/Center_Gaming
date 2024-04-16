@@ -1,0 +1,197 @@
+*, ::before, ::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+footer
+{
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.lien
+{
+  height: 30vh;
+}
+.footer-container
+{
+  display: flex;
+  align-self: center;
+  background-color: rgb(44, 54, 46);
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 0 !important;
+
+}
+/* liste de des conditins */
+a
+{
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+li
+{
+  margin-bottom: 20px;
+}
+.list
+{
+  position: relative;
+  top: 3vh;
+  left: 5vw;
+  list-style:  none;
+}
+a:hover
+{
+  color: aqua;
+}
+.footer-container .contenue .lien
+{
+  border-bottom:1px solid whitesmoke ;
+  display: flex;
+  justify-content: space-between;
+}
+/* Les icons de réseaux sociales */
+.icon:hover
+{
+  animation: bounce 0.7s ease infinite alternate
+}
+@keyframes bounce {
+  from {top: 0;}
+
+  to{top:10px;}
+
+}
+.icon
+{
+  height: 4vh;
+  width: 2vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  position: relative;
+}
+.icon img
+{
+  width: 20px;
+}
+.facebook
+{
+  background-color: blue;
+  opacity:  0.7;
+}
+.discord
+{
+  background-color: palevioletred;
+  opacity:  0.7;
+}
+.twitter
+{
+background-color: steelblue;
+opacity:  0.7;
+}
+.instagram
+{
+  background-color: pink;
+  opacity:  0.7;
+}
+.youtube
+{
+  background-color: red;
+  opacity:  0.7;
+}
+.twitch
+{
+  background-color: purple;
+}
+.media
+{
+  display: flex;
+  margin-left: 2Ovw;
+}
+.tripo
+{
+  color: aliceblue;
+}
+
+
+/* Copyright */
+
+.information, .geo-selected, .copyright
+{
+  display: flex;
+}
+.geo-selected
+{
+  align-items: center;
+position: relative;
+left: 58vw;
+gap: 10px;
+}
+.copyright, .localisation, .country, .currency
+{
+  color: white;
+  font-size: 1.2rem;
+}
+.icon-language svg
+{
+  position: relative;
+  width: 30px;
+  fill: white;
+  height: 100%;
+}
+.icon-currencies svg
+{
+  width: 30px;
+  fill:white;
+  height: 2vw;
+}
+.icon-location
+{
+  position: relative;
+  width: 2vw;
+  fill:white;
+  height: 3px;
+  padding: 10px;
+  bottom: 15px;
+}
+.copyright
+{
+  align-items: center;
+}
+.apps
+{
+  display: flex;
+  align-items: center;
+  margin-right: 10vw;
+  gap: 5vw;
+}
+.test
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.apple
+{
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: black;
+  padding: 10px;
+}
+.android
+{
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: black;
+  padding: 10px;
+}
+.apple img
+{
+  width: 5vw;
+}
+.android img
+{
+  width: 5vw;
+}
