@@ -1,7 +1,7 @@
 <header >
   <nav>
     <ul>
-      <li>Genre</li>
+      <li (click)="genreView(genre)">Genre</li>
       <li>Plateforme</li>
       <li>Prix</li>
     </ul>
@@ -10,6 +10,13 @@
       <input type="text"  id="search" placeholder="Recherche..." >
     </span>
   </nav>
+  <div class="genre" #genre>
+    <ul>
+      @for (item of liste_jeux; track $index) {
+        <li>{{item.genre[$index]}}</li>
+      }
+    </ul>
+  </div>
   <img src="/assets/Fallout.jpg" alt="">
 </header>
 

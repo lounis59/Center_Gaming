@@ -10,6 +10,8 @@ import { JEUX } from './Liste_Jeux';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+  liste_jeux = JEUX
+  genre = document.body.querySelector('.genre')
   ngOnInit(): void {
     this.backgroundJeux()
   }
@@ -51,6 +53,13 @@ export class AppComponent implements OnInit {
     }
   }
 
+  }
+  genreView(element:HTMLElement){
+    if(element?.style.height === ""){
+      element.style.height = '10vh'
+    }else{
+      element.style.height = ''
+    }
   }
  
 }
