@@ -1,6 +1,7 @@
 main
 {
     background-color: rgb(39, 39, 39);
+    width: 100vw;
 }
     .jeux {
         position: relative;

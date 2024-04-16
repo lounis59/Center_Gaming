@@ -30,9 +30,10 @@ header::after {
     z-index: 2; /* Assurez-vous que le pseudo-élément se trouve en arrière-plan */
 }
 nav{
-    z-index: 2;
+    z-index: 5;
     font-family: 'FjallaOne';
-    position: sticky;
+    position: fixed;
+    top: 20px;
     left: 50%;
     translate: -50%;
     width: 50vw;
