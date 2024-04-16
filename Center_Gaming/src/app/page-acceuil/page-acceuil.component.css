@@ -7,9 +7,7 @@ main
         overflow: hidden; 
         /* min-width: 25vw; */
         /* margin: auto; */
-       &:hover{
-        scale: 1.075;
-       }
+       
       }
 
 
@@ -28,13 +26,16 @@ main
 .vid
 {
     position:absolute;
-    border-radius: 10px;
+    border-radius: 15px;
     top: 0;
     left: 0;
     width: 20vw;
     aspect-ratio: 16/9;
     z-index: 1;
     margin: 5px;
+    &:hover{
+        scale: 1.075;
+       }
 }
 
 .carteJeux 
