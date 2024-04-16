@@ -27,7 +27,7 @@ li
     background-size: cover;
     text-align: center;
     color: white;
-    font-family: monospace;
+    font-family: 'FjallaOne';
     font-size: 2rem;
 }
 .action{background-image: url(../../assets/categoriesjeux/action.jpg);}
@@ -57,10 +57,11 @@ span
 }
 h2
 {
-    color: white;
+    color: black;
     font-family: monospace;
     font-size: 2rem;
     margin: 20px 10px;
+    font-family: 'FjallaOne';
 }
 button
 {
