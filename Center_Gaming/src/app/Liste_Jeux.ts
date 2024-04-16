@@ -82,7 +82,27 @@ export const JEUX: Jeux[] =[
             "image":["./assets/Tekken 8.jpg","./assets/Tekken 8-1.jpg","./assets/Tekken 8-2.jpg"],
             "video":"",
             "prix":"47.99€",
-            "genre":["jeux solo","action"]}
+            "genre":["jeux solo","action"]},
+            {"id":10,
+            "titre":"Path of Exile",
+            "platform":["pc"],
+            "description":"Path of Exile est un jeu de rôle d'action (ARPG), très inspiré de Diablo on parle ici de Diablo like dans lequel le joueur choisit l'une des sept classes de personnages à incarner. Voir ci-dessous pour en savoir plus sur les classes de personnages.\n\nLe jeu se déroule dans un monde fantastique dystopique dans lequel les personnages sont exilés de la nation insulaire d'Oriath vers le continent de Wraeclast, un continent aujourd'hui détruit. Le continent était autrefois un centre d'empire fabuleux et civilisé, mais il abrite désormais des prisonniers et des criminels. Il est aussi, comme vous le découvrirez bientôt, la demeure de nombreux dieux anciens.\n\nVotre tâche consiste à vous frayer un chemin jusqu'à Oriath, en vainquant ces dieux et d'autres grands maux en cours de route. Vous devrez découvrir des vestiges de l'Empire éternel, autrefois puissant, et même des signes de la civilisation Vaal. Faites équipe avec d'autres exilés pour éviter de tomber dans les griffes des bandits assoiffés de sang qui envahissent le continent, alors que vous luttez à travers les terres désolées dans votre effort pour rentrer chez vous.\n\nVous devez défendre les autres exilés contre les brutes et les monstres, accepter les quêtes et les missions des PNJ et découvrir les secrets qui se cachent derrière les horreurs de Wraeclast. Vous vous rendrez vite compte qu'une fois les antagonistes de Wraeclast éliminés, le jeu ne fait en fait que commencer à se réchauffer !\n\nVous retournez en triomphe à Oriath, pour découvrir qu'il y a encore plus de brutes et de monstres à vaincre, même s'ils se font passer pour des dirigeants bons et honnêtes - il y a donc un travail de détective à faire aussi, pour découvrir qui n'a pas les intentions aussi pures qu'il le prétend.",
+            "sortie":"23 octobre 2013",
+            "image":["./assets/path-of-exile-1.jpg","./assets/path-of-exile-2.jpg","./assets/path-of-exile-3.jpg"],
+            "video":"",
+            "prix":"Free to play",
+            "genre":["aventure","action","free to play","RPG","jeux solo","MMO","multijoueur","Co-op en ligne"]},
+            
+            {"id":11,
+            "titre":"Cyberpunk 2077: Ultimate Edition",
+            "platform":["pc","ps5","xbox"],
+            "description":"Cyberpunk 2077 est un RPG d'action-aventure en monde ouvert qui se déroule dans la mégalopole de Night City, où vous incarnez un cyber-mercenaire qui livre un combat sans merci pour sa survie. Avec des améliorations et du contenu additionnel gratuit, personnalisez entièrement votre personnage et votre style de jeu en accomplissant des boulots, améliorez votre réputation et déverrouillez des améliorations. Les relations que vous nouerez et les choix que vous ferez auront un impact sur l'histoire et le monde qui vous entoure. C'est ici que se forgent les légendes. Quelle sera la vôtre ?\n\nNight City semble plus vivante que jamais grâce à la mise à jour 2.1 entièrement gratuite ! Voyagez sur le réseau de métro NCART parfaitement fonctionnel, écoutez de la musique en explorant la ville avec le Radioport, passez du temps avec votre conquête chez V, participez à des courses rejouables, pilotez de nouveaux véhicules, profitez de la maniabilité améliorée des motos et des nouvelles possibilités de combat qu'elles offrent, découvrez des secrets cachés et bien plus encore !\n\nDevenez un hors-la-loi urbain équipé d'améliorations cybernétiques et forgez votre légende dans les rues de Night City.\n\nNight City regorge de choses à faire, d'endroits à voir et de gens à rencontrer. Et vous êtes libre d'aller où vous voulez, quand vous voulez, comme vous voulez.\n\nLancez-vous dans des aventures risquées et nouez des relations avec des personnages inoubliables dont le sort dépendra de vos choix.\n\nRedécouvrez Cyberpunk 2077 avec de nombreux changements et améliorations apportés au gameplay, à l'économie, à l'ergonomie de la carte et bien plus.\n\nObtenez des cadeaux en jeu et des goodies numériques inspirés des jeux CD PROJEKT RED dans le cadre du programme Mes Récompenses.",
+            "sortie":"5 décembre 2023",
+            "image":["./assets/cyberpunk-2077-1.jpg","./assets/cyberpunk-2077-2.jpg","./assets/cyberpunk-2077-3.jpg"],
+            "video":"",
+            "prix":"37.16€",
+            "genre":["jeux solo","RPG"]},
+
         
         
     
