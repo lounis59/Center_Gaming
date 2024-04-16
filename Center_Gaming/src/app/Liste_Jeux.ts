@@ -25,7 +25,7 @@ export const JEUX: Jeux[] =[
             "platform":["pc","ps5","xbox"],
             "description":"Vingt ans se sont écoulés depuis les événements du jeu original. Le virus a gagné du terrain et l'humanité se meurt lentement. Vous incarnez Aiden Caldwell, un pèlerin errant qui livre des marchandises, apporte des nouvelles et relie les quelques colonies de survivants restantes dans des terres arides dévastées par le virus zombie. Cependant, votre véritable objectif est de retrouver votre petite sœur Mia, que vous avez laissée derrière vous lorsque vous étiez enfant pour échapper aux expériences de torture du Dr Waltz. Hanté par votre passé, vous décidez finalement de l'affronter lorsque vous apprenez que Mia est peut-être encore en vie à Villedor, la dernière ville encore debout sur Terre.\n\nVous vous retrouvez rapidement dans un village déchiré par les conflits. Vous devrez vous engager dans des combats inventifs et sanglants et affiner vos compétences pour vaincre les hordes de zombies et vous faire des alliés. Parcourez la ville, courez librement à travers les bâtiments et par dessus les toits de Villedor à la recherche de butin dans les zones reculées, mais méfiez-vous de la nuit car à chaque coucher de soleil, des monstres prennent le contrôle des rues.",
             "sortie":"22 février 2024",
-            "image":["./assets/Dying light 2.jpg","./assets/Dying light 2-1.jpg","./assets/Dying light 2-2.jpg"],
+            "image":["./assets/Dying Light 2.jpg","./assets/Dying light 2-1.jpg","./assets/Dying light 2-2.jpg"],
             "video":"",
             "prix":"19.99€",
             "genre":["jeux solo","action","aventure","RPG"]},
