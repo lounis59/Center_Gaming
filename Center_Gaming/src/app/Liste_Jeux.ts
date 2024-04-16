@@ -82,7 +82,47 @@ export const JEUX: Jeux[] =[
             "image":["./assets/Tekken 8.jpg","./assets/Tekken 8-1.jpg","./assets/Tekken 8-2.jpg"],
             "video":"",
             "prix":"47.99€",
-            "genre":["jeux solo","action"]}
+            "genre":["jeux solo","action"]},
+            {"id":10,
+            "titre":"Path of Exile",
+            "platform":["pc"],
+            "description":"Path of Exile est un jeu de rôle d'action (ARPG), très inspiré de Diablo on parle ici de Diablo like dans lequel le joueur choisit l'une des sept classes de personnages à incarner. Voir ci-dessous pour en savoir plus sur les classes de personnages.\n\nLe jeu se déroule dans un monde fantastique dystopique dans lequel les personnages sont exilés de la nation insulaire d'Oriath vers le continent de Wraeclast, un continent aujourd'hui détruit. Le continent était autrefois un centre d'empire fabuleux et civilisé, mais il abrite désormais des prisonniers et des criminels. Il est aussi, comme vous le découvrirez bientôt, la demeure de nombreux dieux anciens.\n\nVotre tâche consiste à vous frayer un chemin jusqu'à Oriath, en vainquant ces dieux et d'autres grands maux en cours de route. Vous devrez découvrir des vestiges de l'Empire éternel, autrefois puissant, et même des signes de la civilisation Vaal. Faites équipe avec d'autres exilés pour éviter de tomber dans les griffes des bandits assoiffés de sang qui envahissent le continent, alors que vous luttez à travers les terres désolées dans votre effort pour rentrer chez vous.\n\nVous devez défendre les autres exilés contre les brutes et les monstres, accepter les quêtes et les missions des PNJ et découvrir les secrets qui se cachent derrière les horreurs de Wraeclast. Vous vous rendrez vite compte qu'une fois les antagonistes de Wraeclast éliminés, le jeu ne fait en fait que commencer à se réchauffer !\n\nVous retournez en triomphe à Oriath, pour découvrir qu'il y a encore plus de brutes et de monstres à vaincre, même s'ils se font passer pour des dirigeants bons et honnêtes - il y a donc un travail de détective à faire aussi, pour découvrir qui n'a pas les intentions aussi pures qu'il le prétend.",
+            "sortie":"23 octobre 2013",
+            "image":["./assets/path-of-exile-1.jpg","./assets/path-of-exile-2.jpg","./assets/path-of-exile-3.jpg"],
+            "video":"",
+            "prix":"Free to play",
+            "genre":["aventure","action","free to play","RPG","jeux solo","MMO","multijoueur","Co-op en ligne"]},
+            
+            {"id":11,
+            "titre":"Cyberpunk 2077: Ultimate Edition",
+            "platform":["pc","ps5","xbox"],
+            "description":"Cyberpunk 2077 est un RPG d'action-aventure en monde ouvert qui se déroule dans la mégalopole de Night City, où vous incarnez un cyber-mercenaire qui livre un combat sans merci pour sa survie. Avec des améliorations et du contenu additionnel gratuit, personnalisez entièrement votre personnage et votre style de jeu en accomplissant des boulots, améliorez votre réputation et déverrouillez des améliorations. Les relations que vous nouerez et les choix que vous ferez auront un impact sur l'histoire et le monde qui vous entoure. C'est ici que se forgent les légendes. Quelle sera la vôtre ?\n\nNight City semble plus vivante que jamais grâce à la mise à jour 2.1 entièrement gratuite ! Voyagez sur le réseau de métro NCART parfaitement fonctionnel, écoutez de la musique en explorant la ville avec le Radioport, passez du temps avec votre conquête chez V, participez à des courses rejouables, pilotez de nouveaux véhicules, profitez de la maniabilité améliorée des motos et des nouvelles possibilités de combat qu'elles offrent, découvrez des secrets cachés et bien plus encore !\n\nDevenez un hors-la-loi urbain équipé d'améliorations cybernétiques et forgez votre légende dans les rues de Night City.\n\nNight City regorge de choses à faire, d'endroits à voir et de gens à rencontrer. Et vous êtes libre d'aller où vous voulez, quand vous voulez, comme vous voulez.\n\nLancez-vous dans des aventures risquées et nouez des relations avec des personnages inoubliables dont le sort dépendra de vos choix.\n\nRedécouvrez Cyberpunk 2077 avec de nombreux changements et améliorations apportés au gameplay, à l'économie, à l'ergonomie de la carte et bien plus.\n\nObtenez des cadeaux en jeu et des goodies numériques inspirés des jeux CD PROJEKT RED dans le cadre du programme Mes Récompenses.",
+            "sortie":"5 décembre 2023",
+            "image":["./assets/cyberpunk-2077-1.jpg","./assets/cyberpunk-2077-2.jpg","./assets/cyberpunk-2077-3.jpg"],
+            "video":"",
+            "prix":"37.16€",
+            "genre":["jeux solo","RPG"]},
+            {"id":12,
+            "titre":"Fallout 4 GOTY Edition",
+            "platform":["pc","xbox"],
+            "description":"Bethesda Game Studios, studio de développement maintes fois récompensé à l'origine de Fallout 3 et de The Elder Scrolls V: Skyrim, vous invite à découvrir Fallout 4, leur titre le plus ambitieux à ce jour incarnant la nouvelle génération du jeu en monde ouvert.\n\nDans la peau du seul survivant de l'abri 111, vous émergez dans un monde dévasté par une guerre nucléaire. Votre survie sera un combat de tous les instants et vos choix façonneront votre destin. Vous seul avez le pouvoir de faire entrer les Terres désolées dans une nouvelle ère. Bienvenue chez vous.\n\nJouissez d'une liberté d'action sans précédent dans un monde ouvert offrant des centaines de lieux, de personnages et de quêtes. Rejoignez plusieurs factions dans leur combat pour la suprématie ou forgez votre destinée en loup solitaire, c'est à vous seul de décider.\n\nNIncarnez le personnage que vous voulez grâce au système S.P.E.C.I.A.L. Soldat en armure assistée ou baratineur charismatique, choisissez parmi des centaines d'aptitudes et développez votre propre style de jeu.\n\nUn tout nouveau moteur graphique et une gestion des éclairages de nouvelle génération donnent vie au monde de Fallout comme jamais auparavant. Des forêts dévastées du Commonwealth aux ruines de Boston, chaque lieu fourmille de détails dynamiques. \n\nLes combats intenses à la première ou à la troisième personne peuvent aussi être ralentis grâce au nouveau Système de Visée Assistée Vault-Tec (SVAV) dynamique, qui vous permet de choisir vos attaques avant de profiter du carnage comme si vous y étiez.\n\nTrouvez, améliorez et créez des milliers d'objets grâce au système de fabrication le plus sophistiqué jamais conçu. Armes, armures, substances chimiques et nourriture ne sont qu'une infime partie des possibilités : vous pourrez même construire et gérer des colonies entières !",
+            "sortie":"10 novembre 2015",
+            "image":["./assets/fallout-4-goty-1.jpg","./assets/fallout-4-goty-2.jpg","./assets/fallout-4-goty-3.jpg"],
+            "video":"",
+            "prix":"7.49€",
+            "genre":["jeux solo","RPG"]},
+            {"id":13,
+            "titre":"Horizon Forbidden West Complete Edition",
+            "platform":["pc","ps5"],
+            "description":"Accompagnez Aloy dans son périple au cœur d'un territoire majestueux mais non moins périlleux, qui abrite de mystérieuses nouvelles menaces. Avec la version Complete Edition, profitez du jeu à succès Horizon Forbidden West sur PC ainsi que de contenu bonus, y compris l'extension Burning Shores dont l'histoire commence directement après le jeu principal.\n\nExplorez des terres lointaines, affrontez des machines toujours plus imposantes et dévastatrices, et rencontrez de nouvelles tribus fascinantes lors de votre retour dans le monde d'Horizon dépeignant un futur lointain post-apocalyptique.\n\nLe monde se meurt. De terribles tempêtes et un déclin inéluctable s'abattent sur les vestiges épars de l'humanité, tandis que de nouvelles machines effrayantes rôdent aux frontières et que la vie sur Terre se précipite vers une nouvelle extinction.\n\nC'est à Aloy que revient la mission de découvrir les secrets de ces menaces et de restaurer l'ordre et l'équilibre du monde. Dans sa quête, elle devra retrouver d'anciens amis, forger des alliances avec de nouvelles factions guerrières et exhumer les secrets des temps anciens.\n\nObservez chaque détail du jeu avec les formats d'image Ultrawide 21:9 et Super Ultrawide 32:9, ainsi que la prise en charge du triple écran 48:9.*\n\nRegardez l'Ouest prohibé prendre vie grâce au rendu optimisé et à la génération d'images NVIDIA DLSS 3, à l'amélioration d'images NVIDIA DLAA et à la réduction de latence NVIDIA Reflex. AMD FSR et Intel XeSS sont également compatibles.",
+            "sortie":"21 mars 2024",
+            "image":["./assets/horizon-forbidden-1.jpg","./assets/horizon-forbidden-2.jpg","./assets/horizon-forbidden-3.jpg"],
+            "video":"",
+            "prix":"44.10€",
+            "genre":["jeux solo","action","RPG"]},
+
+
+
         
         
     

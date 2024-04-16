@@ -1,17 +1,22 @@
 
   <main>
- <h2> Tendance du moment ✓</h2>
     <div class="carteJeux">
     @for (jeu of liste_jeux; track $index) 
     {
         <div class="jeux">
-            <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, video)" (mouseleave)="mouseleave(image, video)" #image>
+            <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, video, prix)" (mouseleave)="mouseleave(image, video, prix)" #image>
             <video class="vid" src="/assets/video1.webm" #video
             loop muted></video>
-            <div class="Nom">
+            <div class="Nom" #nom>
                 <p>{{jeu.titre}}</p></div>
-                <div class="Prix"></div>
-                <p>{{jeu.prix}}</p>
+                <div class="Prix" #prix>
+                <p >{{jeu.prix}}</p>
+                </div>
+                </div>
+
+
+                <div class="transision">
+
                 </div>
     }
     
