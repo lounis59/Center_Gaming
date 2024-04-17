@@ -2,7 +2,7 @@
   <nav>
     <ul>
       <li (click)="genreView(genre)">Genre</li>
-      <li>Plateforme</li>
+      <li (click)="genreView(platforme)">Plateforme</li>
       <li>Prix</li>
     </ul>
     <span #search (click)="sizeSeach($event,search,svg)">
@@ -12,8 +12,15 @@
   </nav>
   <div class="genre" #genre>
     <ul>
-      @for (item of liste_jeux; track $index) {
-        <li>{{item.genre[$index]}}</li>
+      @for (item of liste_Genre; track $index) {
+        <li>{{item}}</li>
+      }
+    </ul>
+  </div>
+  <div class="platforme" #platforme>
+    <ul>
+      @for (item of liste_Plateform; track $index) {
+        <li>{{item}}</li>
       }
     </ul>
   </div>
