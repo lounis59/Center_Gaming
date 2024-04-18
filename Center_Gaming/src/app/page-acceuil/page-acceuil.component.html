@@ -3,10 +3,8 @@
     <div class="carteJeux">
     @for (jeu of liste_jeux; track $index) 
     {
-        <div class="jeux">
-            <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, prix, video)" (mouseleave)="mouseleave(image, prix, video)" #image>
         <div class="jeux" (click)="goToGamePage(jeu.id)">
-            <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, video, prix)" (mouseleave)="mouseleave(image, video, prix)" #image>
+          <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, prix, video)" (mouseleave)="mouseleave(image, prix, video)" #image>
             <video class="vid" src="/assets/video1.webm" #video
             loop muted></video>
             <div class="Nom" #nom>
