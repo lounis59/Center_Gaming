@@ -15,10 +15,8 @@ export default class PageAcceuilComponent {
 <<<<<<< HEAD
   liste_Promo = [...JEUX].splice (7, 12)
   mouseenter(photo: HTMLImageElement , prix : HTMLElement, video?: HTMLVideoElement )
-=======
   constructor(private router:Router){}
   mouseenter(photo: HTMLImageElement, video: HTMLVideoElement , prix : HTMLElement )
->>>>>>> 335426af888bb0cb592175a97f6f71bac8ede1a9
   
   {
   
@@ -44,13 +42,10 @@ export default class PageAcceuilComponent {
       }
       
     }
-<<<<<<< HEAD
  promo (){}
-=======
     goToGamePage(id:number){
       this.router.navigate(["page-jeux",id])
     }
->>>>>>> 335426af888bb0cb592175a97f6f71bac8ede1a9
 }
 
 
