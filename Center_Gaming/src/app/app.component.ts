@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { FooterCenterGamingComponent } from './footer-center-gaming/footer-center-gaming.component';
 import { JEUX } from './Liste_Jeux';
 import { Jeux } from './Jeux';
@@ -12,6 +12,8 @@ import { Jeux } from './Jeux';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+  constructor(private router: Router){}
+
   liste_jeux = JEUX
   genre = document.body.querySelector('.genre')
   liste_Genre:string[] = ["Action","Arcade","Aventure","FPS","SOLO","RPG","Free to Play","Sport","Strategie"];
@@ -60,11 +62,19 @@ export class AppComponent implements OnInit {
   }
   genreView(element:HTMLElement){
     if(element?.style.maxHeight === ""){
-      element.style.maxHeight = '500px'
+      element.style.maxHeight = '200px'
       element.style.transition = '0.8s'
     }else{
       element.style.maxHeight = ''
     }
+  }
+  goToCat()
+  {
+    this.router.navigate(["categories"]);
+  }
+  goToHome()
+  {
+    this.router.navigate([""]);
   }
 
 }
