@@ -126,7 +126,7 @@ opacity:  0.7;
 {
   align-items: center;
 position: relative;
-left: 58vw;
+left: 65vw;
 gap: 10px;
 }
 .copyright, .localisation, .country, .currency
@@ -145,16 +145,15 @@ gap: 10px;
 {
   width: 30px;
   fill:white;
-  height: 2vw;
+  height: 2vh;
 }
-.icon-location
+.icon-location svg
 {
-  position: relative;
+
   width: 2vw;
   fill:white;
-  height: 3px;
-  padding: 10px;
-  bottom: 15px;
+  height: 2vh;
+
 }
 .copyright
 {

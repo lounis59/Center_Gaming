@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './footer-center-gaming.component.css'
 })
 export class FooterCenterGamingComponent {
+  toggleSetting()
+  {
+    
 
+  }
 }
