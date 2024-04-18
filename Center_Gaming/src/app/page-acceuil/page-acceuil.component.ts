@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { JEUX } from '../Liste_Jeux';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-acceuil',
@@ -11,6 +12,7 @@ import { JEUX } from '../Liste_Jeux';
 export default class PageAcceuilComponent {
   
   liste_jeux = [...JEUX].splice(0, 9)
+  constructor(private router:Router){}
   mouseenter(photo: HTMLImageElement, video: HTMLVideoElement , prix : HTMLElement )
   
   {
@@ -33,6 +35,9 @@ export default class PageAcceuilComponent {
       prix.style.opacity = "";
       video.style.scale = "";
       video.pause();
+    }
+    goToGamePage(id:number){
+      this.router.navigate(["page-jeux",id])
     }
 }
 
