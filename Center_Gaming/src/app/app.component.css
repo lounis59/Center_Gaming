@@ -10,7 +10,7 @@ header {
     margin: 0;
 }
 
-header img {
+.backgroundHeader {
     top: 0;
     position: absolute;
     height: 98%;
@@ -83,15 +83,21 @@ nav{
         transform: scale(1.2);
     }
 }
-
-
+}
+.mainLogo{
+    z-index: 3;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 5%;
 }
 .genre{
     display: flex;
     align-items: center;
     z-index: 5;
     width: 10vw;
-    height: 0;
+    height: min-content;
+    max-height: 0;
     overflow: hidden;
     background-color: rgba(44, 54, 46,0.7);
     position: fixed;
@@ -114,11 +120,13 @@ nav{
     }
 }
 .platforme{
+    
     display: flex;
     align-items: center;
     z-index: 5;
     width: 10vw;
-    height: 0;
+    height: min-content;
+    max-height: 0;
     overflow: hidden;
     background-color: rgba(44, 54, 46,0.7);
     position: fixed;
