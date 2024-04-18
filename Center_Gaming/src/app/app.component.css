@@ -36,7 +36,7 @@ nav{
     top: 20px;
     left: 50%;
     translate: -50%;
-    width: 50vw;
+    width: 40vw;
     height: 50px;
     border-radius: 30px;
     display: flex;
@@ -91,34 +91,7 @@ nav{
     height: 150px;
     left: 5%;
 }
-.genre{
-    display: flex;
-    align-items: center;
-    z-index: 5;
-    width: 10vw;
-    height: min-content;
-    max-height: 0;
-    overflow: hidden;
-    background-color: rgba(44, 54, 46,0.7);
-    position: fixed;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    left: 30%;
-    top: 70px;
-    ul{
-        color: white;
-        font-family: 'FjallaOne';
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        list-style: none;
-        width: 100%;
-        height: 100%;
-        li{
-            margin: 5px;
-        }
-    }
-}
+
 .platforme{
     
     display: flex;
@@ -132,7 +105,7 @@ nav{
     position: fixed;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    left: 47%;
+    left: 45%;
     top: 70px;
     ul{
         color: white;

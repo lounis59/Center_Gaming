@@ -1,0 +1,88 @@
+.jeux {
+    position: relative;
+    overflow: hidden; 
+    /* min-width: 25vw; */
+    /* margin: auto; */
+   
+  }
+  .phot
+  {
+      position: relative;
+      width:20vw;
+      border-radius: 10px;
+      aspect-ratio: 16/9;
+      top: 0;
+      left: 0;
+      margin: 5px;
+      z-index: 2;
+  }
+  
+  .vid
+  {
+      position:absolute;
+      border-radius: 15px;
+      top: 0;
+      left: 0;
+      width: 20vw;
+      aspect-ratio: 16/9;
+      z-index: 1;
+      margin: 5px;
+      &:hover{
+          scale: 1.075;
+         }
+  }
+  
+  .carteJeux 
+  
+  {
+      align-self: center;
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap:wrap;
+      max-width: 100vw;
+      width: 80%;
+      margin: auto;
+      z-index: 1;
+      /* padding-left: 20%; */
+      
+      .Nom
+      {
+          color: white;
+      font-family: 'FjallaOne';
+      }
+  
+      .Prix
+      {
+          position: absolute;
+          color: white;
+          font-family: 'FjallaOne';
+          background-color: orangered;
+          width: fit-content;
+          padding: 1px;
+          top:65%;
+          right: 0;
+          z-index : 3;
+          border-radius: 10px;
+      }
+  
+  }
+  
+  .Transition
+  {
+      position: relative;
+   background-color: orange;
+   width: 100%;
+   height: 5rem;
+   display: flex;
+   justify-content: space-evenly ;
+   flex-direction:row;
+  
+   p
+   {
+      /* margin: 2rem; */
+      color: white;
+      font-family: 'FjallaOne';
+   }
+  } 
