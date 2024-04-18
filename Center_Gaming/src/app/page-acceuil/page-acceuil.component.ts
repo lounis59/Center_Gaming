@@ -10,7 +10,7 @@ import { JEUX } from '../Liste_Jeux';
 })
 export default class PageAcceuilComponent {
   
-  liste_jeux = JEUX.splice(0, 9)
+  liste_jeux = [...JEUX].splice(0, 9)
   mouseenter(photo: HTMLImageElement, video: HTMLVideoElement , prix : HTMLElement )
   
   {
