@@ -4,7 +4,7 @@
     @for (jeu of liste_jeux; track $index) 
     {
         <div class="jeux">
-            <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, video, prix)" (mouseleave)="mouseleave(image, video, prix)" #image>
+            <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, prix, video)" (mouseleave)="mouseleave(image, prix, video)" #image>
             <video class="vid" src="/assets/video1.webm" #video
             loop muted></video>
             <div class="Nom" #nom>
@@ -17,10 +17,35 @@
       </div>
 
      <div class="Transition">
-      <p>Ultra Rapide <br> Vitesse de la lumiere</p>
-      <p>100% sécuriser <br> Fiable et sûr </p>
-      <p>Service Client <br> Conseillé Disponible h24/7</p>
+      <div class="Logo"></div>
+      <p> Le meilleure site GAMING du moment 🌍 un multivers  pour vous divertir 👌 100 % fiable avec une vitesse de téléchargement optimal 🚀  </p>
      </div>
+
+     <div class="TitrePromotion"> <p> LES PROMOTIONS GEEKTOP🔥🔥🔥</p></div>
+
+     <div class="Promotion">
+      @for ( jeu of liste_Promo; track $index)
+      {
+        <div class="jeux">
+      <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, promo , video)" (mouseleave)="mouseleave(image, promo, video)" #image>
+      <video class="vid" src="../../assets/video1.webm" #video loop muted></video>
+      <div class="Nom" #nom>
+        <p>{{jeu.titre}}</p></div>
+        <div class="Promo" #promo>
+        <!-- <p >{{jeu.romo}}</p> -->
+        </div>
+        </div>
+}
+
+     </div>
+
+
+     
+     
+ 
+ 
+ 
+
 
   </main>
 

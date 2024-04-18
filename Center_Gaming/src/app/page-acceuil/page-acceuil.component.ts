@@ -10,8 +10,9 @@ import { JEUX } from '../Liste_Jeux';
 })
 export default class PageAcceuilComponent {
   
-  liste_jeux = JEUX.splice(0, 9)
-  mouseenter(photo: HTMLImageElement, video: HTMLVideoElement , prix : HTMLElement )
+  liste_jeux = [...JEUX].splice(0, 9)
+  liste_Promo = [...JEUX].splice (7, 12)
+  mouseenter(photo: HTMLImageElement , prix : HTMLElement, video?: HTMLVideoElement )
   
   {
   
@@ -27,16 +28,21 @@ export default class PageAcceuilComponent {
       console.error("Error:!");
     }
   }
-    mouseleave(photo: HTMLImageElement, video: HTMLVideoElement, prix : HTMLElement)
+    mouseleave(photo: HTMLImageElement, prix : HTMLElement, video?: HTMLVideoElement)
     {
       photo.style.opacity= "";
       prix.style.opacity = "";
-      video.style.scale = "";
-      video.pause();
+      if(video){
+        video.style.scale = "";
+        video.pause();
+      }
+      
     }
+ promo (){}
 }
 
 
+ 
 
 
 
