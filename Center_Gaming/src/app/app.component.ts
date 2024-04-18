@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterCenterGamingComponent } from './footer-center-gaming/footer-center-gaming.component';
 import { JEUX } from './Liste_Jeux';
+import { Jeux } from './Jeux';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,10 @@ import { JEUX } from './Liste_Jeux';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
+  liste_jeux = JEUX
+  genre = document.body.querySelector('.genre')
+  liste_Genre:string[] = ["Action","Arcade","Aventure","FPS","SOLO","RPG","Free to Play","Sport","Strategie"];
+  liste_Plateform:string[] = ["PC","XBOX","PS5"]
   ngOnInit(): void {
     this.backgroundJeux()
   }
@@ -52,6 +57,13 @@ export class AppComponent implements OnInit {
     }
   }
 
+  }
+  genreView(element:HTMLElement){
+    if(element?.style.height === ""){
+      element.style.height = 'min-content'
+    }else{
+      element.style.height = ''
+    }
   }
 
 }

@@ -1,8 +1,8 @@
 <header >
   <nav>
     <ul>
-      <li>Genre</li>
-      <li>Plateforme</li>
+      <li (click)="genreView(genre)">Genre</li>
+      <li (click)="genreView(platforme)">Plateforme</li>
       <li>Prix</li>
     </ul>
     <span #search (click)="sizeSeach($event,search,svg)">
@@ -10,6 +10,20 @@
       <input type="text"  id="search" placeholder="Recherche..." >
     </span>
   </nav>
+  <div class="genre" #genre>
+    <ul>
+      @for (item of liste_Genre; track $index) {
+        <li>{{item}}</li>
+      }
+    </ul>
+  </div>
+  <div class="platforme" #platforme>
+    <ul>
+      @for (item of liste_Plateform; track $index) {
+        <li>{{item}}</li>
+      }
+    </ul>
+  </div>
   <img src="/assets/Fallout.jpg" alt="">
 </header>
 
