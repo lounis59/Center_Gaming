@@ -126,8 +126,12 @@ opacity:  0.7;
 {
   align-items: center;
 position: relative;
-left: 58vw;
+left: 65vw;
 gap: 10px;
+}
+.geo-selected:hover
+{
+  color: aqua;
 }
 .copyright, .localisation, .country, .currency
 {
@@ -145,16 +149,15 @@ gap: 10px;
 {
   width: 30px;
   fill:white;
-  height: 2vw;
+  height: 2vh;
 }
-.icon-location
+.icon-location svg
 {
-  position: relative;
+
   width: 2vw;
   fill:white;
-  height: 3px;
-  padding: 10px;
-  bottom: 15px;
+  height: 2vh;
+
 }
 .copyright
 {
@@ -194,4 +197,105 @@ gap: 10px;
 .android img
 {
   width: 5vw;
+}
+/* overlay */
+.overlay
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(26, 128, 46);
+  z-index: 10;
+  display: none;
+  height: 50vh;
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 10vh;
+  border-radius: 10px;
+}
+.réglages-title, .choix
+{
+  display: flex;
+  margin: 2vh;
+}
+select
+{
+  padding: 1vh;
+}
+.region
+{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.text
+{
+  color: white;
+}
+.limiter
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.choix
+{
+align-items: center;
+}
+.separation
+{
+  height: 60px;
+}
+.réglages-subtitle
+{
+  display: flex;
+  font-weight: 700;
+  flex-direction: column;
+}
+.languages
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+.flag
+{
+  margin-right: 15px;
+}
+.flag
+{
+  background-size: 100%;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+}
+.flagfr
+{
+  background-image: url(/assets/images/fr.svg);
+}
+.flagesp
+{
+background-image: url(/assets/images/es.svg);
+}
+.flagan
+{
+  background-image: url(/assets/images/an.svg);
+}
+.languages a, .currencies
+{
+  margin: 10px;
+  border-radius: 7px;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  transition: 0.2s;
+  width: calc(33.33333% - 30px);
+
+}
+.currencies
+{
+  width: 100%;
+  justify-content: space-around;
 }

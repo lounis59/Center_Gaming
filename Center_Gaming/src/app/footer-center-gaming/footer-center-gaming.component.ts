@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './footer-center-gaming.component.css'
 })
 export class FooterCenterGamingComponent {
-
+  toggleSetting(overlay:HTMLElement)
+  {
+    overlay.style.display = "block";
+  }
 }
