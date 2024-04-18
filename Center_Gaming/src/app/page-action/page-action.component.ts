@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { JEUX } from '../Liste_Jeux';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-action',
@@ -10,8 +11,9 @@ import { JEUX } from '../Liste_Jeux';
 })
 export class PageActionComponent {
 
-  nb_jeux =[]
-  liste_jeux = JEUX.splice(0, 21)
+  // nb_jeux =[]
+  liste_jeux = [...JEUX].splice(0, 20)
+  constructor(private router:Router){}
   mouseenter(photo: HTMLImageElement, video: HTMLVideoElement , prix : HTMLElement )
   
   {
@@ -34,6 +36,9 @@ export class PageActionComponent {
       prix.style.opacity = "";
       video.style.scale = "";
       video.pause();
+    }
+    goToGamePage(id:number){
+      this.router.navigate(["page-jeux",id])
     }
 
 }
