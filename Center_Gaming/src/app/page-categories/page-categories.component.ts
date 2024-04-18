@@ -13,6 +13,6 @@ export class PageCategoriesComponent {
   constructor(private router: Router){}
   goToAction()
   {
-    this.router.navigate([""]);
+    this.router.navigate(["action"]);
   }
 }
