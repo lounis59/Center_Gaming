@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   liste_jeux = JEUX
   genre = document.body.querySelector('.genre')
   liste_Genre:string[] = ["Action","Arcade","Aventure","FPS","SOLO","RPG","Free to Play","Sport","Strategie"];
-  liste_Plateform:string[] = ["PC","XBOX","PS5"]
+  liste_Plateform:string[] = ["PC","XBOX","PS5"];
   ngOnInit(): void {
     this.backgroundJeux()
   }
@@ -59,10 +59,11 @@ export class AppComponent implements OnInit {
 
   }
   genreView(element:HTMLElement){
-    if(element?.style.height === ""){
-      element.style.height = 'min-content'
+    if(element?.style.maxHeight === ""){
+      element.style.maxHeight = '500px'
+      element.style.transition = '0.8s'
     }else{
-      element.style.height = ''
+      element.style.maxHeight = ''
     }
   }
 
