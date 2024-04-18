@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
   }
   genreView(element:HTMLElement){
     if(element?.style.maxHeight === ""){
-      element.style.maxHeight = '500px'
+      element.style.maxHeight = '200px'
       element.style.transition = '0.8s'
     }else{
       element.style.maxHeight = ''
