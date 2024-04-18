@@ -20,8 +20,7 @@ li
 {
     display: grid;
     grid-template-rows: 200px auto;
-    border: solid 2px white;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 1.5rem 1rem;
     position: relative;
     background-size: cover;
