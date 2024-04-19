@@ -49,6 +49,9 @@ nav{
         justify-content: space-between;
         width: 70%;
         list-style: none;
+        li{
+            cursor: pointer;
+        }
     }
     span{
         position: absolute;
