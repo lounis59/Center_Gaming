@@ -10,7 +10,26 @@
         <div class="btn">
             <button class="btn1">🤍</button>
             <button class="btn2"><span></span>Ajouter au panier</button>
-
         </div>
+    </div>
+</div>
+<div class="desciption">
+    <h2>Description</h2>
+    <p>{{jeux?.description}}</p>
+</div>
+<div class="visuel">
+    <h2>Visuel</h2>
+    
+        @if (jeux?.video) {
+            <video [src]="jeux?.video" muted controls></video>
+        }@else{
+        <video src="./assets/crown-wars-the-black-prince-sacred-edition-sacred-edition-pc-jeu-steam-europe-preview.webm" muted controls></video>
+        }
+    
+    <div class="image">
+        @for (j of jeux?.image; track $index) {
+            <img [src]="j" alt="">
+        }
+
     </div>
 </div>
