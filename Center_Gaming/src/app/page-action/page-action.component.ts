@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { JEUX } from '../Liste_Jeux';
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,8 +12,15 @@ import { Router } from '@angular/router';
 })
 export class PageActionComponent {
 
-  
+
   liste_jeux = [...JEUX].splice(0,20)
+
+  // for (const index in liste_jeux:string) {
+  //   console.log(liste_jeux[index])
+  // }
+
+  // liste_jeux = [[...JEUX][0],[...JEUX][2]]
+  // liste_jeux = [...JEUX].splice(0,20)
   
   
 
@@ -44,5 +52,7 @@ export class PageActionComponent {
       this.router.navigate(["page-jeux",id])
     }
 
+    
 }
 console.log([...JEUX][0].genre);
+
