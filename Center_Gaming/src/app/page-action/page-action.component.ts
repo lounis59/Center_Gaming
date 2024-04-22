@@ -11,8 +11,11 @@ import { Router } from '@angular/router';
 })
 export class PageActionComponent {
 
-  // nb_jeux =[]
-  liste_jeux = [...JEUX].splice(5, 20)
+  
+  liste_jeux = [...JEUX].splice(0,20)
+  
+  
+
   constructor(private router:Router){}
   mouseenter(photo: HTMLImageElement, video: HTMLVideoElement , prix : HTMLElement )
   
@@ -42,3 +45,4 @@ export class PageActionComponent {
     }
 
 }
+console.log([...JEUX][0].genre);
