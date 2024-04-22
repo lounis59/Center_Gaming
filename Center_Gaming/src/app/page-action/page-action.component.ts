@@ -12,11 +12,11 @@ import { Router } from '@angular/router';
 })
 export class PageActionComponent {
 
-  Liste_Jeux = JEUX;
+  // Liste_Jeux = JEUX;
   jeux?:Jeux 
 
-  For (i in Liste_Jeux){}
-  // liste_jeux = [...JEUX].splice(0,20)
+  // For (i in Liste_Jeux){}
+  liste_jeux = [...JEUX].splice(0,20)
 
   // for (const index in liste_jeux:string) {
   //   console.log(liste_jeux[index])
