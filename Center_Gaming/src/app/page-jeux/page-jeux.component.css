@@ -65,3 +65,42 @@
         }
     }
 }
+.desciption{
+    width: 90%;
+    margin-left: 5%;
+    font-family: 'FjallaOne';
+    color: white;
+    h2{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+}
+.visuel{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+    height: min-content;
+    h2{
+        font-family: 'FjallaOne';
+        color: white;
+        font-size: 3rem;
+    }
+    video{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .image{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        img{
+            width: 30%;
+            border-radius: 10px;
+
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { JEUX } from '../Liste_Jeux';
+import { Jeux } from '../Jeux';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,8 +12,21 @@ import { Router } from '@angular/router';
 })
 export class PageActionComponent {
 
-  // nb_jeux =[]
-  liste_jeux = [...JEUX].splice(5, 20)
+  // Liste_Jeux = JEUX;
+  jeux?:Jeux 
+
+  // For (i in Liste_Jeux){}
+  liste_jeux = [...JEUX].splice(0,20)
+
+  // for (const index in liste_jeux:string) {
+  //   console.log(liste_jeux[index])
+  // }
+
+  // liste_jeux = [[...JEUX][0],[...JEUX][2]]
+  // liste_jeux = [...JEUX].splice(0,20)
+  
+  
+
   constructor(private router:Router){}
   mouseenter(photo: HTMLImageElement, video: HTMLVideoElement , prix : HTMLElement )
   
@@ -41,4 +55,7 @@ export class PageActionComponent {
       this.router.navigate(["page-jeux",id])
     }
 
+    
 }
+console.log([...JEUX][0].genre);
+

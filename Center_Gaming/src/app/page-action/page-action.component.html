@@ -1,7 +1,7 @@
 <div class="carteJeux">
     @for (jeu of liste_jeux; track $index) 
     {
-        <div class="jeux">
+        <div class="jeux" (click)="goToGamePage(jeu.id)">
             <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, video, prix)" (mouseleave)="mouseleave(image, video, prix)" #image>
             <video class="vid" src="/assets/video1.webm" #video
             loop muted></video>
