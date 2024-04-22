@@ -1,5 +1,8 @@
 
   <main>
+
+    <div class="TitrePromotion"> <p> LES JEUX DU MOMENTS🔥🔥🔥</p></div>
+
     <div class="carteJeux">
     @for (jeu of liste_jeux; track $index)
     {
@@ -27,18 +30,21 @@
       @for ( jeu of liste_Promo; track $index)
       {
         <div class="jeux">
-      <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, promo , video)" (mouseleave)="mouseleave(image, promo, video)" #image>
-      <video class="vid" src="../../assets/video1.webm" #video loop muted></video>
+      <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, undefined , video)" (mouseleave)="mouseleave(image, promo, video)" #image>
+      <video class="vid" src="{{jeu.video}}" #video loop muted></video>
       <div class="Nom" #nom>
         <p>{{jeu.titre}}</p></div>
         <div class="Promo" #promo>
-        <!-- <p >{{jeu.romo}}</p> -->
+         <p >{{jeu.Promo}}</p> 
         </div>
-        </div>
-}
-
+        <div class="Prix1" #prix>
+          <p >{{jeu.prix}}</p>
+          </div>
+          </div>
+        }
+          
      </div>
-
+     <div class="TitrePromotion"> <p> LES JEUX DU MOMENTS🔥🔥🔥</p></div>
 
 
 

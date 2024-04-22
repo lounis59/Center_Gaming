@@ -126,7 +126,7 @@ opacity:  0.7;
 {
   align-items: center;
 position: relative;
-left: 65vw;
+right: 0;
 gap: 10px;
 }
 .geo-selected:hover
