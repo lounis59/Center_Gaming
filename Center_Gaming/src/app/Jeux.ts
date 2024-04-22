@@ -7,5 +7,6 @@ export interface Jeux{
     image:string[],
     video:string,
     prix:string,
+    Promo:string,
     genre:string[]
 }

@@ -1,7 +1,7 @@
 
   <main>
     <div class="carteJeux">
-    @for (jeu of liste_jeux; track $index) 
+    @for (jeu of liste_jeux; track $index)
     {
         <div class="jeux" (click)="goToGamePage(jeu.id)">
           <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, prix, video)" (mouseleave)="mouseleave(image, prix, video)" #image>
@@ -13,7 +13,7 @@
                 <p >{{jeu.prix}}</p>
                 </div>
                 </div>
-     }  
+     }
       </div>
 
      <div class="Transition">
@@ -40,11 +40,11 @@
      </div>
 
 
-     
-     
- 
- 
- 
+
+
+
+
+
 
 
   </main>

@@ -12,4 +12,8 @@ export class FooterCenterGamingComponent {
   {
     overlay.style.display = "block";
   }
+  CloseButton(overlay:HTMLElement)
+  {
+    overlay.style.display="none";
+  }
 }
