@@ -36,7 +36,7 @@ nav{
     top: 20px;
     left: 50%;
     translate: -50%;
-    width: 40vw;
+    width: 60vw;
     height: 50px;
     border-radius: 30px;
     display: flex;
@@ -89,10 +89,10 @@ nav{
 }
 .mainLogo{
     z-index: 3;
-    position: absolute;
+    
     width: 150px;
     height: 150px;
-    left: 5%;
+    
 }
 
 .platforme{
