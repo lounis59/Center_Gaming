@@ -61,6 +61,13 @@ a:hover
   to{top:10px;}
 
 }
+.apps
+{
+  display: flex;
+  align-items: center;
+  margin-right: 10vw;
+  gap: 5vw;
+}
 .icon
 {
   height: 4vh;
@@ -70,6 +77,7 @@ a:hover
   justify-content: center;
   align-items: center;
   margin: 5px;
+  padding: 20px;
   position: relative;
 }
 .icon img
@@ -115,18 +123,27 @@ opacity:  0.7;
   color: aliceblue;
 }
 
-
 /* Copyright */
 
+.lebas
+{
+  width: 80%;
+  margin: auto;
+}
+.information
+{
+  width: 100%;
+  justify-content: space-between;
+}
 .information, .geo-selected, .copyright
 {
   display: flex;
 }
 .geo-selected
 {
-  align-items: center;
 position: relative;
-left: 65vw;
+align-items: center;
+padding: 10px 20px;
 gap: 10px;
 }
 .geo-selected:hover
@@ -162,14 +179,9 @@ gap: 10px;
 .copyright
 {
   align-items: center;
+  white-space:  nowrap;
 }
-.apps
-{
-  display: flex;
-  align-items: center;
-  margin-right: 10vw;
-  gap: 5vw;
-}
+
 .test
 {
   display: flex;
@@ -192,11 +204,66 @@ gap: 10px;
 }
 .apple img
 {
-  width: 5vw;
+  width: 10vw;
 }
 .android img
 {
-  width: 5vw;
+  width: 10vw;
+}
+@media screen and (max-width: 1000px){
+.lien
+{
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+.list
+{
+  top: 0;
+  left: 0;
+}
+.apps
+{
+  margin-right: 0;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+.media
+{
+  margin-bottom: 2vh;
+}
+.tripo
+{
+  margin-bottom: 2vh;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 1000px){
+.copyright
+{
+  display: none;
+}
+  .currency
+  {
+    white-space: nowrap;
+  }
+  .information
+  {
+    text-align: center;
+    justify-content: center;
+  }
+  .apple img
+  {
+    width: 10vw;
+  }
+  .android img
+  {
+    width: 10vw;
+  }
 }
 /* overlay */
 .overlay
@@ -206,7 +273,7 @@ gap: 10px;
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: orangered;
+  background-color: rgba(255, 68, 0, 0.734);
   z-index: 10;
   display: none;
   height: 60vh;
@@ -224,6 +291,7 @@ gap: 10px;
 {
   font-size: 1.5em;
   font-weight: 700;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 select
 {
@@ -239,6 +307,7 @@ select
 {
   color: white;
   font-size: 1.2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .limiter
 {
@@ -261,6 +330,7 @@ align-items: center;
   font-weight: 700;
   flex-direction: column;
   margin-left: 2vw;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .languages
 {
@@ -301,6 +371,7 @@ background-image: url(/assets/images/es.svg);
   align-items: center;
   transition: 0.2s;
   width: calc(33.33333% - 30px);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
 }
 .currencies
@@ -310,7 +381,7 @@ background-image: url(/assets/images/es.svg);
 }
 .button-close
 {
-  background-color: orangered;
+  background-color: rgba(255, 68, 0, 0);
   height: 3vh;
   width: 3vw;
   border: none;
