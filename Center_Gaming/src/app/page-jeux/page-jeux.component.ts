@@ -27,5 +27,18 @@ export class PageJeuxComponent implements OnInit {
 
       this.mainImageJeux = this.jeux.image[0]
     }
+    this.changeImgBackground()
+  }
+  ngOnDestroy():void{
+    const img = document.querySelector('.backgroundHeader') as HTMLImageElement
+    img.src = "/assets/Fallout.jpg"
+  }
+  changeImgBackground(){
+    const img = document.querySelector('.backgroundHeader') as HTMLImageElement
+    console.log(img);
+    
+    if(this.jeux){
+      img.src = this.jeux.image[Math.floor(Math.random()*this.jeux.image.length)]
+    }
   }
 }
