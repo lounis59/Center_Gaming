@@ -10,15 +10,17 @@ import { Router } from '@angular/router';
   styleUrl: './page-acceuil.component.css'
 })
 export default class PageAcceuilComponent {
-  
+
   liste_jeux = [...JEUX].splice(0, 9)
   liste_Promo = [...JEUX].splice (7, 12)
   constructor(private router:Router){}
+
+ /*  mouseenter(photo: HTMLImageElement , prix : HTMLElement, video?: HTMLVideoElement ) */
   mouseenter(photo: HTMLImageElement , prix : HTMLElement, video?: HTMLVideoElement )
-  
+
   {
-  
-    
+
+
     if (video && photo && prix) {
       photo.style.opacity = "0";
       prix.style.opacity = "0";
@@ -38,7 +40,7 @@ export default class PageAcceuilComponent {
         video.style.scale = "";
         video.pause();
       }
-      
+
     }
     goToGamePage(id:number){
       this.router.navigate(["page-jeux",id])
@@ -46,7 +48,7 @@ export default class PageAcceuilComponent {
 }
 
 
- 
+
 
 
 
