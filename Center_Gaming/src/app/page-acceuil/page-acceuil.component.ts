@@ -13,7 +13,7 @@ export default class PageAcceuilComponent {
 
   liste_jeux = [...JEUX].splice(0, 9)
   liste_Promo = [...JEUX].splice (14, 20)
-  liste_Sortie = [...JEUX].splice(20,26)
+  liste_Sortie = [...JEUX].splice(14,20)
   constructor(private router:Router){}
 
  /*  mouseenter(photo: HTMLImageElement , prix : HTMLElement, video?: HTMLVideoElement ) */
