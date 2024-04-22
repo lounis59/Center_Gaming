@@ -15,7 +15,9 @@ export default class PageAcceuilComponent {
   liste_Promo = [...JEUX].splice (7, 12)
   constructor(private router:Router){}
 
+ /*  mouseenter(photo: HTMLImageElement , prix : HTMLElement, video?: HTMLVideoElement ) */
   mouseenter(photo: HTMLImageElement , prix : HTMLElement, video?: HTMLVideoElement )
+
   {
 
 
