@@ -38,7 +38,7 @@ export class PageJeuxComponent implements OnInit {
     console.log(img);
     
     if(this.jeux){
-      img.src = this.jeux.image[0]
+      img.src = this.jeux.image[Math.floor(Math.random()*this.jeux.image.length)]
     }
   }
 }
