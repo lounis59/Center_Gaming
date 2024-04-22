@@ -29,8 +29,8 @@
      <div class="Promotion">
       @for ( jeu of liste_Promo; track $index)
       {
-        <div class="jeux">
-      <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, undefined , video)" (mouseleave)="mouseleave(image, promo, video)" #image>
+        <div class="jeux" (click)="goToGamePage(jeu.id)">
+      <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, prix , video)" (mouseleave)="mouseleave(image, prix, video)" #image>
       <video class="vid" src="{{jeu.video}}" #video loop muted></video>
       <div class="Nom" #nom>
         <p>{{jeu.titre}}</p></div>
@@ -44,7 +44,23 @@
         }
           
      </div>
-     <div class="TitrePromotion"> <p> LES JEUX DU MOMENTS🔥🔥🔥</p></div>
+     <div class="TitrePromotion"> <p> LES SORTIES 🔥🔥🔥</p></div>
+     @for ( jeu of liste_Sortie; track $index)
+     {
+
+<div class="Sortie" (click)="goToGamePage(jeu.id)" >
+  <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, prix , video)" (mouseleave)="mouseleave(image, prix, video)" #image>
+      <video class="vid" src="{{jeu.video}}" #video loop muted></video>
+      <div class="Nom" #nom>
+        <p>{{jeu.titre}}</p></div>
+        <div class="Promo" #promo>
+         <p >{{jeu.Promo}}</p> 
+        </div>
+        <div class="Prix1" #prix>
+          <p >{{jeu.prix}}</p>
+          </div>
+          </div>
+        }
 
 
 
