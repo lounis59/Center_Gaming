@@ -73,10 +73,13 @@ main
         background-color: orangered;
         width: fit-content;
         padding: 1px;
-        top:65%;
+        top:72%;
         right: 0;
         z-index : 3;
-        border-radius: 10px;
+        border-radius: 5px;
+        & p{
+            margin: 0;
+        }
     }
 
 }
@@ -160,10 +163,11 @@ main
     background-color: red;
     width: fit-content;
     padding: 1px;
-    top:65%;
+    top:72%;
     right: 0;
     z-index : 3;
-    border-radius: 10px;
+    border-radius: 5px;
+    & p{margin: 0;}
 }
 
 .Prix1 
@@ -172,13 +176,13 @@ main
     position: absolute;
     color: white;
     font-family: 'FjallaOne';
-    background-color: orangered;
     width: fit-content;
     padding: 1px;
-    top:65%;
-    right: 15%;
+    top:86%;
+    right: 1%;
     z-index : 3;
-    border-radius: 10px;
+    border-radius: 5%;
+    & p {margin: 0;}
 
 }
     }
@@ -224,14 +228,24 @@ main
     
 
     .Sortie{
-        width: 30vw;
+        width: 35vw;
         position: relative;
+        display: grid ;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+
     }
     .Nom
     {
+        position: relative;
         color: white;
         font-family: 'FjallaOne';
-   
+        grid-row: 2/3;
+        top: -2rem;
+        left: 0.5rem;
+
+        
     }
 
     .vid
@@ -264,29 +278,44 @@ main
 
 .Promo 
 {
-    position: relative;
+    position: absolute;
     color: white;
     font-family: 'FjallaOne';
-    background-color: red;
+    background-color:orange;
     width: fit-content;
     padding: 1px;
+    top: 64%;
+    left: 53%;
     z-index : 3;
-    border-radius: 10px;
+    border-radius: 5px;
+    & p{margin: 0;}
 }
 
 .Prix1 
 
 {
     position:absolute;
-    top: 53%;
-    right: 25%;
+    top: 77%;
+    right: 41%;
     color: white;
     font-family: 'FjallaOne';
-    background-color: orangered;
     width: fit-content;
     padding: 1px;
     z-index : 3;
     border-radius: 10px;
 
+    & p {margin: 0;}
+
+}
+
+.Description
+{
+     position: relative;
+    color: white;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    & p{
+        margin: 0;
+    }
 }
 }
