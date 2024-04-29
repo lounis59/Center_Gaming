@@ -16,7 +16,7 @@ export class PageActionComponent {
   jeux?:Jeux 
 
   // For (i in Liste_Jeux){}
-  liste_jeux = [...JEUX].splice(0,20)
+  liste_jeux = [...JEUX].splice(0,26)
 
   // for (const index in liste_jeux:string) {
   //   console.log(liste_jeux[index])
