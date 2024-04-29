@@ -252,7 +252,7 @@ export const JEUX: Jeux[] =[
             "prix":"25.91€",
             "Promo":"-63%",
             "genre":["jeux solo","sport"]},
-            {"id":24,
+            {"id":26,
             "titre":"The Last of Us Part I",
             "platform":["pc","ps5"],
             "description":"Retrouvez l'histoire poignante et les personnages inoubliables de The Last of Us™, lauréat de plus de 200 récompenses du Jeu de l'année.\n\nDans un monde dévasté où rôdent infectés et survivants endurcis, Joel, un protagoniste désabusé, est engagé pour faire sortir Ellie, 14 ans, d'une zone de quarantaine militaire.\n\nMais ce qui devait être une simple mission de routine se transforme vite en un dangereux périple à travers le pays.\n\nContient l'histoire solo complète The Last of Us et le chapitre bonus acclamé Left Behind, qui relate les événements ayant bouleversé la vie d'Ellie et de sa meilleure amie, Riley.",
