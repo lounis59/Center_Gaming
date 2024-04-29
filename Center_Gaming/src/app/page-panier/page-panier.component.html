@@ -1,0 +1,61 @@
+
+<div class="Header">
+
+    <div class="Logo"><img src="../../assets/Center_Gaming_Logo 1.png" alt="">
+    </div>
+
+    <div class="Progressivement">
+
+    <div class="Avancerdepaiement">
+        <span class="step1">
+            <span class="number">1</span>
+            <span class="text"> Dans le Panier</span>
+            <span class="spacer"></span>
+        </span>
+    </div>
+    <div class="paiement">
+        <span class="step2">
+            <span class="number">2</span>
+            <span class="text"> Valider votre Panier</span>
+            <span class="spacer"></span>
+        </span>
+    </div>
+    <div class="validation">
+        <span class="step3">
+            <span class="number">3</span>
+            <span class="text"> Recuperer vos Jeux</span>
+            <span class="spacer"></span>
+        </span>
+    </div>
+     </div>
+    <div class="paiementSecuriser">
+        <p>Paiement 100% Sécuriser 🔒</p>
+    </div>
+</div>
+
+<div class="container">
+    @for ( jeu of panier; track $index)
+    {
+        <div class="titre"></div>
+<h2>Panier</h2>
+<div cdjpanier>
+<div class="photo">
+    <img  src="{{jeu.image}}">
+</div>
+<div class="nom">
+    <p>{{jeu.nom}}</p>
+</div>
+<div class="Poubelle">
+    <span>🗑️</span>
+</div>
+<div class="prix">
+    <p>{{jeu.prix}}</p>
+</div>
+<div class="Quantité">
+    <input type="number" min="0" max="">
+</div>
+
+</div>
+    }
+
+</div>
