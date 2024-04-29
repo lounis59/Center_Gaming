@@ -3,10 +3,12 @@ import PageAcceuilComponent from './page-acceuil/page-acceuil.component';
 import { PageCategoriesComponent } from './page-categories/page-categories.component';
 import { PageJeuxComponent } from './page-jeux/page-jeux.component';
 import { PageActionComponent } from './page-action/page-action.component';
+import { PageMonCompteComponent } from './page-mon-compte/page-mon-compte.component';
 
 export const routes: Routes = [
     {path : "" , component : PageAcceuilComponent},
     {path: "categories", component: PageCategoriesComponent},
     {path: "page-jeux/:id",component: PageJeuxComponent},
+    {path: "page-mon-compte",component: PageMonCompteComponent},
     {path: "action", component: PageActionComponent}
 ];

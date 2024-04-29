@@ -76,5 +76,8 @@ export class AppComponent implements OnInit {
   {
     this.router.navigate([""]);
   }
+  goToUserAcont(){
+    this.router.navigate(["page-mon-compte"])
+  }
 
 }
