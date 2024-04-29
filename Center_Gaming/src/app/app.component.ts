@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { FooterCenterGamingComponent } from './footer-center-gaming/footer-center-gaming.component';
 import { JEUX } from './Liste_Jeux';
 import { Jeux } from './Jeux';
@@ -18,8 +18,16 @@ export class AppComponent implements OnInit {
   genre = document.body.querySelector('.genre')
   liste_Genre:string[] = ["Action","Arcade","Aventure","FPS","SOLO","RPG","Free to Play","Sport","Strategie"];
   liste_Plateform:string[] = ["PC","XBOX","PS5"];
+  defaultTemplate = true;
+  Listepageblank = ["/Panier"];
   ngOnInit(): void {
     this.backgroundJeux()
+    this.router.events.subscribe(e=>{
+      if (e instanceof NavigationEnd)
+      {
+        this.defaultTemplate = !this.Listepageblank.includes(e.url);
+      }
+    })
   }
   title = 'Center_Gaming';
   background:string = ""

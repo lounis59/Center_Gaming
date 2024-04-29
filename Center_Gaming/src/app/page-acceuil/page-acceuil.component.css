@@ -315,6 +315,7 @@ main
     grid-column: 2/3;
     grid-row: 1/2;
     & p{
+        font-family: 'FjallaOne';
         margin: 0;
     }
 }

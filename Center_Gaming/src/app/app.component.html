@@ -1,4 +1,6 @@
-<header >
+@if (defaultTemplate) 
+{
+  <header >
   <nav>
     <img (click)="goToHome()" src="../assets/Center_Gaming_Logo 1.png" alt="Center_Gaming_Logo.png" class="mainLogo">
     <ul>
@@ -21,6 +23,11 @@
   </div>
   <img src="/assets/Fallout.jpg" alt="" class="backgroundHeader">
 </header>
+}
+
 
 <router-outlet />
+@if (defaultTemplate) 
+{
 <app-footer-center-gaming></app-footer-center-gaming>
+}
