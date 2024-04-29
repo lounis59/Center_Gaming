@@ -8,7 +8,7 @@
     {
         <div class="jeux" (click)="goToGamePage(jeu.id)">
           <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, prix, video)" (mouseleave)="mouseleave(image, prix, video)" #image>
-            <video class="vid" src="/assets/video1.webm" #video
+            <video class="vid" src="{{jeu.video}}" #video
             loop muted></video>
             <div class="Nom" #nom>
                 <p>{{jeu.titre}}</p></div>
