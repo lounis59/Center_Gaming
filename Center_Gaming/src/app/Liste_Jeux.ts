@@ -262,6 +262,16 @@ export const JEUX: Jeux[] =[
             "prix":"29.99€",
             "Promo":"-50%",
             "genre":["jeux solo","action","aventure"]},
+            {"id":27,
+            "titre":"World of Warcraft Dragonflight",
+            "platform":["pc"],
+            "description":"Les Vols draconiques d’Azeroth sont de retour pour défendre leur foyer ancestral, les îles aux Dragons\n\nDébordantes de magie élémentaire et de l’essence vitale d’Azeroth, les îles s’éveillent de nouveau et vous invitent à découvrir leurs merveilles primordiales et leurs secrets longtemps oubliés.",
+            "sortie":"28 novembre 2022",
+            "image":["./assets/world-of-warcraft-cover.jpg","./assets/world-of-warcraft-1.jpg","./assets/world-of-warcraft-2.jpg","./assets/world-of-warcraft-3.jpg"],
+            "video":"./assets/world-of-warcraft-preview.webm",
+            "prix":"30.72€",
+            "Promo":"-39%",
+            "genre":["action","aventure"]},
 
 
 
