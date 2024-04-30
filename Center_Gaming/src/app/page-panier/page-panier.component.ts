@@ -15,7 +15,9 @@ export class PagePanierComponent implements OnInit {
       quantite: 1,
       nom: "Dragon Dogma 2",
       plateforme : "Playstation",
-      image:"./assets/Dragon_Dogma2.jpg",
+      plateformelogo:"./assets/playstation1.jpg",
+      image:"./assets/motogp-24-pc-jeu-steam-wallpaper-1-big.jpg",
+
     }
   ]
 

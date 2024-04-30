@@ -79,6 +79,7 @@ nav{
         border: none;
         border-radius: 30px;
         display: none;
+        margin-right: 10%;
     }
     input:focus{
         outline: none;
