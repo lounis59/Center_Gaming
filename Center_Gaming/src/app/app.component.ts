@@ -87,5 +87,8 @@ export class AppComponent implements OnInit {
   goToUserAcont(){
     this.router.navigate(["page-mon-compte"])
   }
+  goToInscription(){
+    this.router.navigate(["page-inscription"])
+  }
 
 }
