@@ -2,14 +2,16 @@
     @for (jeu of liste_jeux; track $index) 
     {
         <div class="jeux" (click)="goToGamePage(jeu.id)">
-            <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image, video, prix)" (mouseleave)="mouseleave(image, video, prix)" #image>
-            <video class="vid" src="{{jeu.video}}" #video
-            loop muted></video>
+            <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image,promo, video)" (mouseleave)="mouseleave(image, promo, video)" #image>
+            <video class="vid" src="{{jeu.video}}" #video loop muted></video>
             <div class="Nom" #nom>
                 <p>{{jeu.titre}}</p></div>
-                <div class="Prix" #prix>
-                <p >{{jeu.prix}}</p>
-                </div>
+                <div class="Promo" #promo>
+                    <p >{{jeu.Promo}}</p> 
+                   </div>
+                   <div class="Prix1" #prix>
+                     <p >{{jeu.prix}}</p>
+                     </div>
                 </div>
      }  
       </div>

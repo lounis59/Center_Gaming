@@ -1,6 +1,6 @@
-.conection{
+.inscription{
     width: 50vw;
-    height: 60vh;
+    height: min-content;
     position: relative;
     left:50%;
     translate: -50% 0;
@@ -16,9 +16,6 @@
     justify-content: space-between;
     h2{
         font-size: 3rem;
-    }
-    hr{
-        width: 50%;
     }
     form{
         display: flex;
@@ -38,6 +35,7 @@
             padding: 5px;
             font-size: 1.5rem;
             color: gray;
+            margin: 20px;
         }
         input:hover{
             border:3px solid orangered;
@@ -57,16 +55,8 @@
             font-family: 'FjallaOne';
             font-size: 1.5rem;
             border: none;
+            margin-top: 20px;
         }
     }
-    .ancre{
-        display: flex;
-        align-self: center;
-        width: 50%;
-        justify-content: space-between;
-        a{
-            color: white;
-        }
-    }
-
+   
 }

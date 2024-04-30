@@ -86,3 +86,33 @@
       font-family: 'FjallaOne';
    }
   } 
+  .Promo 
+{
+    position: absolute;
+    color: white;
+    font-family: 'FjallaOne';
+    background-color: red;
+    width: fit-content;
+    padding: 1px;
+    top:72%;
+    right: 0;
+    z-index : 3;
+    border-radius: 5px;
+    & p{margin: 0;}
+}
+
+.Prix1 
+
+{
+    position: absolute;
+    color: white;
+    font-family: 'FjallaOne';
+    width: fit-content;
+    padding: 1px;
+    top:86%;
+    right: 1%;
+    z-index : 3;
+    border-radius: 5%;
+    & p {margin: 0;}
+
+}

@@ -31,7 +31,7 @@ export class PageJeuxComponent implements OnInit {
   }
   ngOnDestroy():void{
     const img = document.querySelector('.backgroundHeader') as HTMLImageElement
-    img.src = "/assets/Fallout.jpg"
+    img.src = "/assets/wow-shadowlands.jpg"
   }
   changeImgBackground(){
     const img = document.querySelector('.backgroundHeader') as HTMLImageElement

@@ -16,7 +16,7 @@ export class PageActionComponent {
   jeux?:Jeux 
 
   // For (i in Liste_Jeux){}
-  liste_jeux = [...JEUX].splice(0,26)
+  liste_jeux = [...JEUX].splice(0,30)
 
   // for (const index in liste_jeux:string) {
   //   console.log(liste_jeux[index])
@@ -28,15 +28,19 @@ export class PageActionComponent {
   
 
   constructor(private router:Router){}
-  mouseenter(photo: HTMLImageElement, video: HTMLVideoElement , prix : HTMLElement )
-  
+  mouseenter(photo: HTMLImageElement , prix? : HTMLElement, video?: HTMLVideoElement, promo?:HTMLElement )
+
   {
-  
-    
-    if (video && photo && prix) {
-      photo.style.opacity = "0";
+
+    if(prix)
       prix.style.opacity = "0";
-      video.style.scale = "1.075"
+    if(promo)
+      promo.style.opacity = "0"
+    if (video && photo) {
+      
+      photo.style.opacity = "0";
+      video.style.scale = "1.075";
+      
 
 
       video.play();
@@ -44,12 +48,19 @@ export class PageActionComponent {
       console.error("Error:!");
     }
   }
-    mouseleave(photo: HTMLImageElement, video: HTMLVideoElement, prix : HTMLElement)
+    mouseleave(photo: HTMLImageElement, prix? : HTMLElement, video?: HTMLVideoElement,promo?:HTMLElement)
     {
       photo.style.opacity= "";
+    
+      if(promo)
+        promo.style.opacity = ""
+      if(prix)
       prix.style.opacity = "";
-      video.style.scale = "";
-      video.pause();
+      if(video){
+        video.style.scale = "";
+        video.pause();
+      }
+
     }
     goToGamePage(id:number){
       this.router.navigate(["page-jeux",id])
