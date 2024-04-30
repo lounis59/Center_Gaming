@@ -1,7 +1,7 @@
 <div class="carteJeux">
-    @for (jeu of liste_jeux; track $index) 
+    @for (jeu of liste_jeux; track $index)
     {
-        <div class="jeux" (click)="goToGamePage(jeu.id)">
+        <div  class="jeux" (click)="goToGamePage(jeu.id)">
             <img class="phot" src="{{jeu.image[0]}}" alt="" (mouseenter)="mouseenter(image,promo, video)" (mouseleave)="mouseleave(image, promo, video)" #image>
             <video class="vid" src="{{jeu.video}}" #video loop muted></video>
             <div class="Nom" #nom>
@@ -15,3 +15,7 @@
                 </div>
      }  
       </div>
+
+
+      <!-- *ngIf="jeu.genre==='action' " -->
+      <!-- *ngfor="let gen in [...JEUX][0].genre" -->

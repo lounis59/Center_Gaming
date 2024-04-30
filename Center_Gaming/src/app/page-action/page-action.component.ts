@@ -12,17 +12,24 @@ import { Router } from '@angular/router';
 })
 export class PageActionComponent {
 
-  // Liste_Jeux = JEUX;
   jeux?:Jeux 
 
-  // For (i in Liste_Jeux){}
-  liste_jeux = [...JEUX].splice(0,30)
+  liste_jeux = [...JEUX]
+  
+  // liste_jeux:any[]= [];
 
-  // for (const index in liste_jeux:string) {
-  //   console.log(liste_jeux[index])
+  // genre(){
+  //   for (let gen in [...JEUX][0].genre){
+  //       if (gen == "action")
+  //         {
+  //           this.liste_jeux.push([...JEUX][0])
+  //         }
+  //         else{this.liste_jeux}
+  //   }
   // }
 
-  // liste_jeux = [[...JEUX][0],[...JEUX][2]]
+
+  // liste_jeux = [[...JEUX][0],[...JEUX][26]]
   // liste_jeux = [...JEUX].splice(0,20)
   
   
@@ -68,5 +75,7 @@ export class PageActionComponent {
 
     
 }
+
 console.log([...JEUX][0].genre);
+
 
