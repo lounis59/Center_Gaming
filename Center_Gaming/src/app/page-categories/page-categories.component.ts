@@ -10,10 +10,7 @@ import { GameService } from '../game.service';
   styleUrl: './page-categories.component.css'
 })
 export class PageCategoriesComponent {
-  // chosenGenre: string = ''
-  // actionGenre: string = 'action'
-  // arcadeGenre: string = 'arcade'
-  // aventureGenre: string = 'aventure'
+
   constructor(private router: Router, private gameservice: GameService){}
   Action()
   {
@@ -54,7 +51,7 @@ export class PageCategoriesComponent {
     this.router.navigate(["genre"]);
   }
   strat(){
-    this.gameservice.chosenGenre="stategie"
+    this.gameservice.chosenGenre="strategie"
     this.router.navigate(["genre"]);
   }
   
