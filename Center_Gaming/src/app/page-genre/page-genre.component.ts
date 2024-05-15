@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { JEUX } from '../Liste_Jeux';
 import { Jeux } from '../Jeux';
 import { Router } from '@angular/router';
+import { GameService } from '../game.service';
 
 @Component({
   selector: 'app-page-action',
@@ -15,26 +16,12 @@ export class PageActionComponent {
   jeux?:Jeux 
 
   liste_jeux = [...JEUX]
-  
-  // liste_jeux:any[]= [];
-
-  // genre(){
-  //   for (let gen in [...JEUX][0].genre){
-  //       if (gen == "action")
-  //         {
-  //           this.liste_jeux.push([...JEUX][0])
-  //         }
-  //         else{this.liste_jeux}
-  //   }
-  // }
-
-
-  // liste_jeux = [[...JEUX][0],[...JEUX][26]]
-  // liste_jeux = [...JEUX].splice(0,20)
-  
-  
-
-  constructor(private router:Router){}
+  constructor(private router:Router , private gameservice: GameService  ){
+    this.filterGames();
+  }
+  filterGames() {
+    this.liste_jeux = this.liste_jeux.filter(game => game.genre.includes(this.gameservice.chosenGenre));
+  }
   mouseenter(photo: HTMLImageElement , prix? : HTMLElement, video?: HTMLVideoElement, promo?:HTMLElement )
 
   {
@@ -77,5 +64,7 @@ export class PageActionComponent {
 }
 
 console.log([...JEUX][0].genre);
+ // liste_jeux = [[...JEUX][0],[...JEUX][26]]
+  // liste_jeux = [...JEUX].splice(0,20)
 
 

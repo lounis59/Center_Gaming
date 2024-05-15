@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
   liste_jeux = JEUX
   genre = document.body.querySelector('.genre')
-  liste_Genre:string[] = ["Action","Arcade","Aventure","FPS","SOLO","RPG","Free to Play","Sport","Strategie"];
+  liste_Genre:string[] = ["action","arcade","aventure","fps","jeux solo","rpg","Free to Play","Sport","Strategie"];
   liste_Plateform:string[] = ["PC","XBOX","PS5"];
   defaultTemplate = true;
   Listepageblank = ["/Panier"];
