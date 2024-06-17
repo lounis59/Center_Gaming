@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './page-inscription.component.css'
 })
 export class PageInscriptionComponent {
-  private url = "../Center_Gaming_Api";
+  private url = "http://localhost:8085/user";
   
   constructor(){
     fetch(this.url).then()
