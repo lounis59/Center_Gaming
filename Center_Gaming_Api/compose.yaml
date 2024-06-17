@@ -1,0 +1,39 @@
+version: '0.3'
+
+services:
+  web:
+    build: .
+    depends_on:
+      - mysql
+    container_name: serveur_center_gaming
+    restart: unless-stopped
+    ports:
+      - "8085:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - ALLOW_OVERRIDE=true
+      - DB_HOST=mysql
+      - DB_USER=root
+      - DB_PASSWORD=root
+      - DB_NAME=center_gaming_bdd
+  mysql:
+    image: mariadb
+    container_name: bdd_center_gaming
+    restart: unless-stopped
+    environment:
+      - MARIADB_ROOT_PASSWORD=root
+    ports:
+      - "3305:3306"
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: PHP_My_Admin_Center_Gaming
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: mysql
+    ports:
+      - "8086:80"
+  

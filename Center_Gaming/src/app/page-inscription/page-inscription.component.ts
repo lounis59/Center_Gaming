@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-page-inscription',
   standalone: true,
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './page-inscription.component.css'
 })
 export class PageInscriptionComponent {
+  private url = "../Center_Gaming_Api";
+  
+  constructor(){
+    fetch(this.url).then()
+  }
 
 }
