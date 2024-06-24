@@ -1,13 +1,16 @@
 <div class="inscription">
     <h2>Inscription</h2>
     
-    <form method="post">
+    <form method="post" #form (ngSubmit)="submit(form)">
         <label for="id">Identifiant</label>
-        <input type="email"  id="id" placeholder="Email">
+        <input type="email"  id="id" placeholder="Email" name="email">
+        <span class="error">{{ errorEmail }}</span>
         <label for="mdp">Mot de passe</label>
-        <input type="password" id="mdp" placeholder="*******">
+        <input type="password" id="mdp" placeholder="*******" name="password">
+        <span class="error">{{ errorPassword }}</span>
         <label for="mdp2">Comfirmer mot de passe</label>
-        <input type="password" id="mdp2" placeholder="*******">
+        <input type="password" id="mdp2" placeholder="*******" name="passwordBis">
+        <span class="error">{{ errorPasswordBis }}</span>
         <button type="submit">Valider</button>
     </form>
     
