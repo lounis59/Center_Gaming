@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-inscription',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,],
   templateUrl: './page-inscription.component.html',
   styleUrl: './page-inscription.component.css'
 })
@@ -15,9 +15,8 @@ export class PageInscriptionComponent {
   errorPassword = "";
   errorPasswordBis = "";
   
-  constructor(){
-    
-  }
+  constructor(private router:Router){}
+
   submit(form:HTMLFormElement){
 
     console.log(this.url);
@@ -33,7 +32,7 @@ export class PageInscriptionComponent {
         response.json().then((data)=>{
           if(data.status === 201)
           {
-
+            this.router.navigate(["/"])
           }
           else
           {
