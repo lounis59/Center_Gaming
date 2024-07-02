@@ -272,6 +272,16 @@ export const JEUX: Jeux[] =[
             "prix":"30.72€",
             "Promo":"-39%",
             "genre":["action","aventure"]},
+            {"id":28,
+                "titre":"Elden Ring - Shadow of the Erdtree",
+                "platform":["pc"],
+                "description":"Shadow of the Erdtree est une extension pour ELDEN RING, sacré jeu de l'année en 2022,sacré jeu de l'année en 2022.Shadow of the Erdtree invite les joueurs à se plonger dans son atmosphère sombre et intense,et à poursuivre leur quête avec une liberté d'exploration totale qui leur permettra de progresser à leur propre rythme.",
+                "sortie":"21 juin 2024",
+                "image":["./assets/elden-ring-cover.jpg","./assets/elden-ring-1.jpg","./assets/elden-ring-2.jpg","./assets/elden-ring-3.jpg"],
+                "video":"./assets/world-of-warcraft-preview.webm",
+                "prix":"30.89€",
+                "Promo":"-23%",
+                "genre":["action","rpg","jeux solo"]},
 
 
 
