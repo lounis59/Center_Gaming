@@ -1,5 +1,6 @@
 <?php
 const ROUTES = [
-    "user"=>"UserController.php"
+    "user"=>"UserController.php",
+    "login"=>"LoginController.php"
 ];
 ?>

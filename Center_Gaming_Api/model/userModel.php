@@ -40,16 +40,16 @@
     /**
      * Ajoute un utilisateur en BDD
      *
-     * @param string $username nom de l'utilisateur
+     * 
      * @param string $email email de l'utilisateur
      * @param string $password mot de passe de l'utilisateur
      * @return void
      */
-    function addUser(string $username,string $email,string $password): void
+    function addUser(string $email,string $password): void
     {
         $pdo = connexionPDO();
-        $sql = $pdo->prepare("INSERT INTO user(username,email,password) VALUES(?,?,?)");
-        $sql->execute([$username,$email,$password]);
+        $sql = $pdo->prepare("INSERT INTO user(email,password) VALUES(?,?)");
+        $sql->execute([$email,$password]);
     }
     /**
      * Supprime un utilisateur via son ID
@@ -72,10 +72,10 @@
      * @param string|integer $id id de l'utilisateur
      * @return void
      */
-    function updateUserById(string $username,string $email,string $password, string|int $id):void
+    function updateUserById(string $email,string $password, string|int $id):void
     {
         $pdo = connexionPDO();
         $sql = $pdo->prepare("UPDATE user SET username=?,email=?,password=? WHERE idUser=?");
-        $sql->execute([$username,$email,$password,$id]);
+        $sql->execute([$email,$password,$id]);
     }
 ?>

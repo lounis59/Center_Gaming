@@ -1,16 +1,22 @@
-<div class="conection">
+<div class="conection" *ngIf="!isLoggedIn">
     <h2>Se connecter</h2>
-    
-    <form action="get">
+    <form method="POST" #form (ngSubmit)="submit(form)">
         <label for="id">Identifiant</label>
-        <input type="email"  id="id" placeholder="Email">
+        <input type="email" id="id" placeholder="Email" name="email">
+        <div *ngIf="errorEmail" class="error">{{ errorEmail }}</div>
+
         <label for="mdp">Mot de passe</label>
-        <input type="password" id="mdp" placeholder="*******">
-        <button type="submit">Se conneter</button>
+        <input type="password" id="mdp" placeholder="*******" name="password">
+        <div *ngIf="errorPassword" class="error">{{ errorPassword }}</div>
+
+        <button type="submit">Se connecter</button>
     </form>
     <div class="ancre">
-        <a href="/">Mot de passe oubliez ?</a>
+        <a href="/">Mot de passe oublié ?</a>
         <a routerLink="/page-inscription">Pas encore de compte ?</a>
-
     </div>
+</div>
+
+<div class="deconnection" *ngIf="isLoggedIn">
+    <button (click)="logout()">Se déconnecter</button>
 </div>

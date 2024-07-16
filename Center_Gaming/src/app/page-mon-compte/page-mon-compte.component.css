@@ -1,4 +1,4 @@
-.conection{
+.conection {
     width: 50vw;
     height: 60vh;
     position: relative;
@@ -59,6 +59,7 @@
             border: none;
         }
     }
+
     .ancre{
         display: flex;
         align-self: center;
@@ -69,4 +70,22 @@
         }
     }
 
+}
+.deconnection{
+    height: min-content;
+    max-width: 50vw;
+    position: relative;
+    left: 50%;
+    translate: -50% 0;
+    margin: 100px;
+    button{
+        width: 50%;
+        height: 50px;
+        border-radius: 10px;
+        background-color: orangered;
+        color: white;
+        font-family: 'FjallaOne';
+        font-size: 1.5rem;
+        border: none;
+    }
 }

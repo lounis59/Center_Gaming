@@ -32,7 +32,7 @@ function create(): void
     // $json = file_get_contents("php://input");
     // $data = json_decode($json);
 
-    $username = $email = $password = "";
+     $email = $password = "";
     $error = setError();
 
     if (!empty($_POST)) {
@@ -43,8 +43,8 @@ function create(): void
         // }
         // else
         // {
-        //     $username = cleanData($data->username);
-        //     if(!preg_match("/^[a-zA-Z'\s-]{2,25}$/", $username))
+        //      cleanData($data->username);
+        //     if(!preg_match("/^[a-zA-Z'\s-]{2,25}$/", ))
         //     {
         //         setError("username", "Veuillez saisir un nom d'utilisateur valide");
         //     }
@@ -82,7 +82,7 @@ function create(): void
         }
         $error = setError();
         if (empty($error["violations"])) {
-            addUser($username, $email, $password);
+            addUser($email, $password);
             sendResponse([], 201, "Inscription Validé");
         }
     }
@@ -107,19 +107,11 @@ function update(): void
     $json = file_get_contents("php://input");
     $data = json_decode($json);
 
-    $username = $password = $email = "";
+     $password = $email = "";
     $error = setError();
 
     if (!empty($data)) {
-        // traitement username :
-        if (empty($data->username)) {
-            $username = $user["username"];
-        } else {
-            $username = cleanData($data->username);
-            if (!preg_match("/^[a-zA-Z'\s-]{2,25}$/", $username)) {
-                setError("username", "Votre nom d'utilisateur contient des caractères interdits");
-            }
-        }
+        
         // traitement email :
         if (empty($_POST["email"]) || $_POST["email"] == $user["email"]) {
             $email = $user["email"];
@@ -151,7 +143,7 @@ function update(): void
         }
         $error = setError();
         if (empty($error["violations"])) {
-            updateUserById($username, $email, $password, $user["idUser"]);
+            updateUserById($email, $password, $user["idUser"]);
             sendResponse([], 204, "Utilisateur mis à jour");
         }
     }
