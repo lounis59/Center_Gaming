@@ -20,12 +20,15 @@ export class AppComponent implements OnInit {
   liste_Plateform:string[] = ["PC","XBOX","PS5"];
   defaultTemplate = true;
   Listepageblank = ["/Panier"];
+  isLogged = false
   ngOnInit(): void {
     this.backgroundJeux()
     this.router.events.subscribe(e=>{
       if (e instanceof NavigationEnd)
       {
         this.defaultTemplate = !this.Listepageblank.includes(e.url);
+        this.isLogged = localStorage.getItem("isLoggedIn") === "true"
+        
       }
     })
   }
@@ -90,5 +93,6 @@ export class AppComponent implements OnInit {
   goToInscription(){
     this.router.navigate(["page-inscription"])
   }
+
 
 }

@@ -1,4 +1,5 @@
 <?php
+// Pour les requêtes OPTIONS
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     header("Access-Control-Allow-Origin: http://localhost:4200");
     header("Access-Control-Allow-Methods: POST");
@@ -7,13 +8,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     exit;
 }
 
-// Pour les autres requêtes, ajustez selon votre logique actuelle
-header("Access-Control-Allow-Origin: http://localhost:4200"); // Remplacez par l'URL de votre frontend
+// Pour les autres requêtes
+header("Access-Control-Allow-Origin: http://localhost:4200");
 header("Access-Control-Allow-Credentials: true");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header('Content-Type: application/json');
 session_start();
+
 
 require __DIR__ . "/../model/userModel.php";
 require __DIR__ . "/../service/_csrf.php";

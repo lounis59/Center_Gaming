@@ -50,8 +50,11 @@ export class PageMonCompteComponent implements OnInit {
       response.json().then((data) => {
         if (data.status === 201) {
           this.isLoggedIn = true;
+          localStorage.setItem("isLoggedIn","true");
           this.router.navigate(["/"]);
+
         } else {
+          localStorage.setItem("isLoggedIn","false");
           if (data.data && Array.isArray(data.data.violations)) {
             for (const error of data.data.violations) {
               switch (error.propertyPath) {
@@ -76,16 +79,23 @@ export class PageMonCompteComponent implements OnInit {
   }
 
   logout() {
-    fetch(this.url + '/logout', {
+    const data = new FormData();
+    data.append("action","logout");
+    fetch(this.url + "/logout", {
       method: "POST",
       credentials: "include",
-      headers: {
-        'Content-Type': 'application/json'
-      }
+      // headers: {
+      //   'Content-Type': 'application/json'
+      // },
+      body: data
     }).then((response) => {
       if (response.ok) {
         this.isLoggedIn = false;
-        this.router.navigate(["/login"]);
+        localStorage.setItem("isLoggedIn","false");
+        this.router.navigate(["/page-mon-compte"]);
+      } else {
+        localStorage.setItem("isLoggedIn","true");
+        throw new Error('Erreur réseau ou autre');
       }
     }).catch(e => {
       console.error('Erreur lors de la déconnexion', e);
