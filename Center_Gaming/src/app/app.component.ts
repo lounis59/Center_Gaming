@@ -93,6 +93,9 @@ export class AppComponent implements OnInit {
   goToInscription(){
     this.router.navigate(["page-inscription"])
   }
+  goToCart(){
+    this.router.navigate(["panier"])
+  }
 
 
 }

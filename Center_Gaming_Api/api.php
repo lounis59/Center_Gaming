@@ -1,6 +1,6 @@
 <?php 
 // J'indique quel site ont acces a mon API
-header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Origin: http://localhost:4200");
 // J'indique lke format des donnees retournees par l'API
 header("Content-Type: application/json; charset=UTF-8");
 

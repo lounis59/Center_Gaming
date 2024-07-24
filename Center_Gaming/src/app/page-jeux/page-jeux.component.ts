@@ -11,6 +11,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './page-jeux.component.css'
 })
 export class PageJeuxComponent implements OnInit {
+  private url = "http://localhost:8085/cart"
   Liste_Jeux = JEUX;
   jeux?:Jeux 
   mainImageJeux:string = ""
@@ -40,5 +41,14 @@ export class PageJeuxComponent implements OnInit {
     if(this.jeux){
       img.src = this.jeux.image[Math.floor(Math.random()*this.jeux.image.length)]
     }
+  }
+  addToCart(){
+    const game = this.jeux
+    // console.log(game)
+    fetch(this.url + "?game="+ game?.id, {
+      method: "GET",
+      credentials: "include"
+    })
+    
   }
 }

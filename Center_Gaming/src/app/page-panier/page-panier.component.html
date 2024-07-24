@@ -42,16 +42,15 @@
     <div class="container">
     @for ( jeu of panier; track $index)
     {
-         <img class="photo"  src="{{jeu.image}}">
+         <img class="photo"  src="{{jeu.image[0]}}">
 
     <div class=" information-container">
     <div class="nom">
-        <img class="imgplat" src="{{jeu.plateformelogo}}" alt="">
-        <p>{{jeu.nom}}</p>
+        <p>{{jeu.titre}}</p>
 
     </div>
     <div class="Plateform">
-        <p>{{jeu.plateforme}}</p>
+        <p>{{jeu.platform}}</p>
     </div>
     <div class="Poubelle">
         <p>Supprime ici </p>

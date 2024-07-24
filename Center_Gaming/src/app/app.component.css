@@ -83,12 +83,30 @@ nav{
     }
     input:focus{
         outline: none;
+        font-size: 25px;
     }
     
     svg:hover{
         transform: scale(1.2);
     }
 }
+}
+.kart{
+    display: flex;
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    background-color: orangered;
+    border-radius: 50%;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    right: 10%;
+    svg{
+        fill: whitesmoke;
+        height: 30px;
+    }
 }
 .mainLogo{
     z-index: 2;

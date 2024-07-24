@@ -11,7 +11,7 @@ export const routes: Routes = [
     {path : "" , component : PageAcceuilComponent},
     {path: "categories", component: PageCategoriesComponent},
     {path: "page-jeux/:id",component: PageJeuxComponent},
-    {path: "Panier", component: PagePanierComponent},
+    {path: "panier", component: PagePanierComponent},
     {path: "page-mon-compte",component: PageMonCompteComponent},
     {path: "page-inscription",component: PageInscriptionComponent},
     {path: "genre", component: PageActionComponent}
