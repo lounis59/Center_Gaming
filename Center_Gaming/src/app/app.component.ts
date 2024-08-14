@@ -3,6 +3,7 @@ import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { FooterCenterGamingComponent } from './footer-center-gaming/footer-center-gaming.component';
 import { JEUX } from './Liste_Jeux';
 import { Jeux } from './Jeux';
+import { GameService } from '../app/game.service';
 
 @Component({
   selector: 'app-root',
@@ -12,15 +13,16 @@ import { Jeux } from './Jeux';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router){}
+  constructor(private router: Router, private gameservice: GameService){}
 
   liste_jeux = JEUX
   genre = document.body.querySelector('.genre')
   liste_Genre:string[] = ["action","arcade","aventure","fps","jeux solo","rpg","Free to Play","Sport","Strategie"];
-  liste_Plateform:string[] = ["PC","XBOX","PS5"];
+  liste_Plateform:string[] = ["pc","xbox","ps5"];
   defaultTemplate = true;
   Listepageblank = ["/Panier"];
   isLogged = false
+  
   ngOnInit(): void {
     this.backgroundJeux()
     this.router.events.subscribe(e=>{
@@ -78,6 +80,8 @@ export class AppComponent implements OnInit {
     }else{
       element.style.maxHeight = ''
     }
+    console.log(element);
+    
   }
   goToCat()
   {
@@ -96,6 +100,10 @@ export class AppComponent implements OnInit {
   goToCart(){
     this.router.navigate(["panier"])
   }
-
+  goToPlateform(plateform: string)
+  {
+    this.gameservice.chosenPlateform=plateform
+    this.router.navigate(["plateform"])
+  }
 
 }

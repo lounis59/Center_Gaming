@@ -57,6 +57,7 @@ function loged(): void {
             if (password_verify($pass, $user["password"])) {
                 $_SESSION["logged"] = true;
                 $_SESSION["idUser"] = $user["idUser"];
+                $_SESSION["expire"] = time()+3600;
                 http_response_code(201);
                 echo json_encode(["status" => 201, "message" => "Connexion réussie"]);
                 exit;

@@ -142,6 +142,7 @@ nav{
         height: 100%;
         li{
             margin: 5px;
+            cursor: pointer;
         }
     }
 

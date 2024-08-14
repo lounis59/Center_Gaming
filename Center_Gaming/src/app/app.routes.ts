@@ -6,6 +6,7 @@ import { PageActionComponent } from './page-genre/page-genre.component';
 import { PagePanierComponent } from './page-panier/page-panier.component';
 import { PageMonCompteComponent } from './page-mon-compte/page-mon-compte.component';
 import { PageInscriptionComponent } from './page-inscription/page-inscription.component';
+import { PagePlateformComponent } from './page-plateform/page-plateform.component';
 
 export const routes: Routes = [
     {path : "" , component : PageAcceuilComponent},
@@ -14,5 +15,6 @@ export const routes: Routes = [
     {path: "panier", component: PagePanierComponent},
     {path: "page-mon-compte",component: PageMonCompteComponent},
     {path: "page-inscription",component: PageInscriptionComponent},
-    {path: "genre", component: PageActionComponent}
+    {path: "genre", component: PageActionComponent},
+    {path: "plateform", component: PagePlateformComponent}
 ];

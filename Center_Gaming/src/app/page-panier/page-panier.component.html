@@ -38,37 +38,41 @@
 
 
 
-
+<div *ngIf="panier && panier.length > 0; else emptyPanier">
     <div class="container">
-    @for ( jeu of panier; track $index)
-    {
-         <img class="photo"  src="{{jeu.image[0]}}">
+        <div *ngFor="let jeu of panier">
+            <img class="photo" [src]="jeu.image[0]" alt="Image du jeu">
 
-    <div class=" information-container">
-    <div class="nom">
-        <p>{{jeu.titre}}</p>
+            <div class="information-container">
+                <div class="nom">
+                    <p>{{ jeu.titre }}</p>
+                </div>
+                <div class="Plateform">
+                    <p>{{ jeu.platform }}</p>
+                </div>
+                <div class="Poubelle">
+                    <p>Supprime ici</p>
+                    <span (click)="deleteFromPanier(jeu.id)">🗑️</span>
+                </div>
+            </div>
 
-    </div>
-    <div class="Plateform">
-        <p>{{jeu.platform}}</p>
-    </div>
-    <div class="Poubelle">
-        <p>Supprime ici </p>
-        <span>🗑️</span>
+            <div class="prix-container">
+                <div class="prix">
+                    <p>{{ jeu.prix }} €</p>
+                    <select name="quantite_{{ jeu.id }}" id="quantite_{{ jeu.id }}" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="prix-container">
-<div class="prix">
-    <p>{{jeu.prix}}</p>
-    <select name="jeux" id="" required>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-</select>
-    </div>
-    </div>
- }
-</div>
+<ng-template #emptyPanier >
+    <p class="textePanier">Votre panier est vide</p>
+</ng-template>
+
 

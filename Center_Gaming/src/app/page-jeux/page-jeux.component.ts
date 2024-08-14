@@ -2,11 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Jeux } from '../Jeux';
 import { JEUX } from '../Liste_Jeux';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-page-jeux',
   standalone: true,
-  imports: [],
+  imports: [RouterLink ],
   templateUrl: './page-jeux.component.html',
   styleUrl: './page-jeux.component.css'
 })
@@ -15,7 +18,7 @@ export class PageJeuxComponent implements OnInit {
   Liste_Jeux = JEUX;
   jeux?:Jeux 
   mainImageJeux:string = ""
-  constructor(private route:ActivatedRoute){}
+  constructor(private route:ActivatedRoute ,private router:Router){}
   ngOnInit(): void {
     let id:any = this.route.snapshot.paramMap.get('id')
     
@@ -49,6 +52,7 @@ export class PageJeuxComponent implements OnInit {
       method: "GET",
       credentials: "include"
     })
+    this.router.navigate(["/"]);
     
   }
 }

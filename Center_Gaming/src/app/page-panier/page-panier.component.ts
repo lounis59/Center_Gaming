@@ -1,48 +1,67 @@
 import { Component, OnInit } from '@angular/core';
-import { JEUX } from '../Liste_Jeux';
 import { Router } from '@angular/router';
 import { Jeux } from '../Jeux';
+import { CommonModule } from '@angular/common';
+import { JEUX } from '../Liste_Jeux';
 
 @Component({
   selector: 'app-page-panier',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './page-panier.component.html',
-  styleUrl: './page-panier.component.css',
+  styleUrls: ['./page-panier.component.css'], // Assurez-vous que ce soit `styleUrls` et non `styleUrl`
 })
 export class PagePanierComponent implements OnInit {
   private url = 'http://localhost:8085/cart';
   Liste_Jeux = JEUX;
 
-  panier: Jeux[] = [
-    // { prix: "43.25€",
-    //   quantite: 1,
-    //   nom: "Dragon Dogma 2",
-    //   plateforme : "Playstation",
-    //   plateformelogo:"./assets/playstation1.jpg",
-    //   image:"./assets/motogp-24-pc-jeu-steam-wallpaper-1-big.jpg",
-    // }
-  ];
+  panier: Jeux[] = []; // Initialisé en tant que tableau vide
 
   constructor(private router: Router) {}
+
   ngOnInit(): void {
+    this.loadPanier();
+  }
+
+  loadPanier(): void {
     fetch(this.url, {
       method: 'GET',
       credentials: 'include',
     })
-      .then((response) => response.json())
-      .then((data) => {
+      .then(response => response.json())
+      .then(data => {
         if (Array.isArray(data)) {
-          console.log(data);
-          this.panier = this.Liste_Jeux.filter((jeux) => {
-            if (data.includes(jeux.id)) {
-              return jeux;
-            }
-            return;
-          });
+          console.log('Panier récupéré:', data);
+          // Filtrer les jeux qui existent dans le panier
+          this.panier = this.Liste_Jeux.filter(jeux => data.includes(jeux.id));
+          
+          
         } else {
-          console.error('le Panier est vide');
+          console.error('Le panier est vide ou a une structure inattendue.');
         }
-      });
+      })
+      .catch(error => console.error('Erreur lors de la récupération du panier:', error));
+  }
+
+  deleteFromPanier(id: number): void {
+    fetch(this.url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ id: id })
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        console.log('Produit supprimé avec succès');
+        // Mettre à jour le panier localement
+        this.panier = this.panier.filter(jeu => jeu.id !== id);
+      } else {
+        console.error('Erreur:', data.message);
+        console.log(data)
+      }
+    })
+    .catch(error => console.error('Erreur:', error));
   }
 }

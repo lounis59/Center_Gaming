@@ -23,7 +23,7 @@
   <div class="platforme" #platforme>
     <ul>
       @for (item of liste_Plateform; track $index) {
-        <li>{{item}}</li>
+        <li (click)="goToPlateform(item)">{{item}}</li>
       }
     </ul>
   </div>
