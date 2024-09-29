@@ -42,6 +42,7 @@
         error_log("Données reçues: " . print_r($data, true));
     if (isset($data['id'])) {
         $idProduit = $data['id'];
+        
 
         // Appeler la fonction pour supprimer le produit du panier
         
