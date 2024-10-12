@@ -4,11 +4,12 @@ import { FooterCenterGamingComponent } from './footer-center-gaming/footer-cente
 import { JEUX } from './Liste_Jeux';
 import { Jeux } from './Jeux';
 import { GameService } from '../app/game.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FooterCenterGamingComponent],
+  imports: [RouterOutlet,FooterCenterGamingComponent,FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -36,6 +37,7 @@ export class AppComponent implements OnInit {
   }
   title = 'Center_Gaming';
   background:string = ""
+  query: string = '';
   backgroundJeux(){
     const listeJeux = JEUX
     const imageAleatoire = listeJeux[Math.floor(Math.random()*listeJeux.length)].image[0]
@@ -104,6 +106,11 @@ export class AppComponent implements OnInit {
   {
     this.gameservice.chosenPlateform=plateform
     this.router.navigate(["plateform"])
+  }
+  goToSearch() {
+    if (this.query.trim() !== '') {
+      this.router.navigate(['/recherche'], { queryParams: { q: this.query } });
+    }
   }
 
 }

@@ -1,0 +1,16 @@
+<div class="carteJeux">
+    <div *ngFor="let jeu of filteredJeux; trackBy: trackByFn" class="jeux" (click)="goToGamePage(jeu.id)">
+      <img class="phot" [src]="jeu.image[0]" alt="Image du jeu" (mouseenter)="mouseenter(image, prix, video)" (mouseleave)="mouseleave(image, prix, video)" #image>
+      <video class="vid" [src]="jeu.video" #video loop muted></video>
+      <div class="Nom" #nom>
+        <p>{{ jeu.titre }}</p>
+      </div>
+      <div class="Prix" #prix>
+        <p>{{ jeu.prix }}</p>
+        <p *ngIf="jeu.Promo">{{ jeu.Promo }}</p>
+      </div>
+    </div>
+  </div>
+  
+  <p *ngIf="filteredJeux.length === 0 && query.length >= 4">Aucun jeu trouvé correspondant à votre recherche.</p>
+  
